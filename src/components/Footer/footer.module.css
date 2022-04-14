@@ -19,30 +19,31 @@
   .section{
     display: flex;
       flex-direction: column;
-      margin-left: 200px;
-      margin-top: 15px
-
+      
+      margin-top: 15px;
+      width:33%
   }
 
   .sectionRedesSociaisParagrafo{
     display: flex;
     flex-direction: column; 
-    margin-left: 200px;
-
+    width:33%
+    
   }
 
   .sectionRedesSoaciais{
     display: flex;
-    margin: 5px 20px 5px 10px
+    margin: 5px 20px 5px 10px;
+    
   }
 
 
   .sectionInformacoes{
 
-    display: flex;
+     display: flex;
      flex-direction: column;
-     margin-left: 200px; 
      margin-bottom: 20px;
+     width:33%;
   }
 
 
