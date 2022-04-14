@@ -1,0 +1,14 @@
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #000000;
+    
+  }
