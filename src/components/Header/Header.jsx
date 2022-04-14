@@ -7,8 +7,7 @@ import logo from "../../assets/imagens/logo.png";
 const Header = () => {
 
   return (
-      <div>
-
+      
     <header className={styles.header}>
 
         <img src={logo} className={styles.img}/>
@@ -29,11 +28,12 @@ const Header = () => {
         </a>
         <a className={styles.link} href="#">
           Artes
+          
         </a>
       </nav>
+      
     </header>
-    </div>
-
+   
   );
 };
 

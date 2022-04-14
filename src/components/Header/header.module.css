@@ -10,6 +10,7 @@
   align-items: flex-end;
   height: 100%;
   background-color: #000000;
+  width: 100%;
 
 }
 
@@ -23,6 +24,7 @@
 .nav { 
     margin-bottom: 50px;
     margin-left: 150px;
+    width: 100%;
 }
 .link {
   font-family: "Open Sans", sans-serif;
@@ -36,3 +38,11 @@
   
   
 }
+
+@media(max-width: 1000px){
+  .link {
+    font-size: 15px;
+  }
+}
+
+

@@ -9,19 +9,19 @@ import {FaInstagram} from 'react-icons/fa';
 const Footer = () => {
     
   return (
-    <div>
+    
            <footer className={styles.footer}>
 
-           <section style={{display: "flex", flexDirection: "column", marginLeft: "200px", marginTop: "15px"}}>
+           <section className={styles.section}>
             <p> Entre em contato, </p>
             <p> Adoraríamos ouvir você! </p>
             </section>
 
         
            
-           <div style={{display: "flex", flexDirection: "column", marginLeft: "200px"}}>
+           <div     className={styles.sectionRedesSociaisParagrafo}>  
             
-            <section style={{display: "flex", margin:"5px 20px 5px 10px"}}>
+            <section className={styles.sectionRedesSociais}>  
         
            <FaFacebookF style={{margin:"5px"}}/> 
            <FaWhatsapp  style={{margin:"5px"}}/>
@@ -32,7 +32,7 @@ const Footer = () => {
            </div> 
            
 
-           <section style={{display: "flex", flexDirection: "column", marginLeft: "200px", marginBottom: "20px"}}>
+           <section className={styles.sectionInformacoes}>                
             <p> Tattoo Art Studio </p>
             <p> Com sede em São Paulo </p>
             <p> artTstudio@gmail.com </p>
@@ -43,7 +43,7 @@ const Footer = () => {
          
 
           </footer>
-    </div>
+    
     
   );
 };
