@@ -13,11 +13,6 @@ const Header = () => {
 
         <img src={logo} className={styles.img}/>
 
-        <div className={styles.frases}>
-       <h1 className={styles.titulo}>zutterman </h1>
-         <p className={styles.subtitulo}>Measure Tapes</p> 
-         </div>
-
 
       <nav className={styles.nav}>
         <a className={styles.link} href="#">
