@@ -1,8 +1,6 @@
 import React from 'react';
-import Header from '../components/Header/Header'
-import flag from '../assets/imagens/flag.jpg'
-
 import styles from './Home.module.css';
+import Button from '../components/Button/Button'
 
 
 
@@ -15,10 +13,12 @@ return (
 
       
       <div className={styles.flag}>
-        
+
+        <div>
+          <Button/>
+        </div>
       </div>
 
-      
       <div className={styles.text}>
 
         <h1>Conectando pessoas pela arte</h1>
@@ -26,10 +26,14 @@ return (
         
       </div>
 
-      <div className={styles.flag_artist}>
+      <div className={styles.flag_artist}> </div>
+      
+      <div className={styles.text}>
+
+        <h1>Conectando pessoas pela arte</h1>
+        <p>Crie sua conta e receba pré-atendimentos de sessões de tatuagem e solicitações de orçamento  de todo o Brasil</p>
         
       </div>
-  
 
   </main>
 )

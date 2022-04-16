@@ -8,11 +8,11 @@ main {
 .flag {
 
   width: 100%;
-  height: 500px;
+  height: 100%;
   background-image: url('../assets/imagens/flag.jpg');
-  background-clip: content-box;
   background-attachment: fixed;
-
+  background-position: center;
+  background-size: cover;
 }
 
 .text {
@@ -41,6 +41,11 @@ p {
   margin-left: 35px;
 }
 
+.button {
+
+  width: 100px;
+  height: 30px;
+}
 
 
 .flag_artist {
