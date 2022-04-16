@@ -13,11 +13,11 @@ return (
 
       <div className={styles.flag}>
 
-        <div>
-            <p>Crie uma conta</p>
+        <div className={styles.elements_flag}>
+          <p>Crie uma conta</p>
         </div>
 
-        <div>
+        <div className={styles.elements_flag}>
           <ButtonH text="Aqui" className={styles.button_h}/>
         </div>
 
