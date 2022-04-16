@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Home.module.css';
 import ButtonH from '../components/ButtonH/ButtonH'
+import ButtonHP from '../components/ButtonHP/ButtonHP'
 
 
 
@@ -18,7 +19,7 @@ return (
         </div>
 
         <div className={styles.elements_flag}>
-          <ButtonH text="Aqui" className={styles.button_h}/>
+          <ButtonH text="Aqui"/>
         </div>
 
       </div>
@@ -36,10 +37,10 @@ return (
 
         <p className={styles.big_p}>Artistas que tatuam em todos os estilos</p>
 
-        <div>
-        <ButtonH text="Conheça nossos artistas"/>
+        <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
+        <ButtonHP text="Conheça nossos artistas"/>
         </div>
-        
+
       </div>
 
       <div className={styles.flag_budget}></div>
@@ -47,8 +48,9 @@ return (
       <div className={styles.text}>
 
         <p className={styles.big_p}>Conheça um pouco da nossa arte</p>
-        <div>
-        <ButtonH text="Faça um orçamento"/>
+
+        <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
+        <ButtonHP text="Faça um orçamento" className={styles.button_hp}/>
         </div>
         
       </div>
