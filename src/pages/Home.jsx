@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Home.module.css';
-import Button from '../components/Button/Button'
+import ButtonH from '../components/ButtonH/ButtonH'
 
 
 
-const Home = () => {
+const Home = ({text}) => {
 
 
 return (
@@ -15,7 +15,11 @@ return (
       <div className={styles.flag}>
 
         <div>
-          <Button/>
+          <ButtonH text="Aqui" className={styles.button_h}/>
+        </div>
+
+        <div>
+          <p></p>
         </div>
       </div>
 
