@@ -12,5 +12,4 @@ function ButtonH ({ onClick, text }) {
 
 }
 
-
 export default ButtonH;

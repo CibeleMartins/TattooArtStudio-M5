@@ -9,6 +9,7 @@
   text-decoration: none;
   transition: .5s;
   border: none;
+  color: aliceblue;
 
 }
 
@@ -16,7 +17,5 @@
 
   background-color: black;
   cursor: pointer;
-  color: aliceblue;
-
 
 }
