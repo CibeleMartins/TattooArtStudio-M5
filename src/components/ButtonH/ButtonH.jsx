@@ -10,8 +10,6 @@ function ButtonH ({ onClick, text }) {
   
   )
 
-
-
 }
 
 

@@ -11,16 +11,16 @@ return (
 
   <main>
 
-      
       <div className={styles.flag}>
+
+        <div>
+            <p>Crie uma conta</p>
+        </div>
 
         <div>
           <ButtonH text="Aqui" className={styles.button_h}/>
         </div>
 
-        <div>
-          <p></p>
-        </div>
       </div>
 
       <div className={styles.text}>
@@ -30,7 +30,7 @@ return (
         
       </div>
 
-      <div className={styles.flag_artist}> </div>
+      <div className={styles.flag_artist}></div>
       
       <div className={styles.text}>
 
