@@ -11,14 +11,14 @@ const Header = () => {
 
     <header className={styles.header}>
 
-        <img src={logo} className={styles.img}/>
+        <img src={logo} alt={logo} className={styles.img}/>
 
 
       <nav className={styles.nav}>
-        <a className={styles.link} href="#">
+        <a className={styles.link} href="/home">
           Home
         </a>
-        <a className={styles.link} href="#">
+        <a className={styles.link} href="/teste">
           Contato
         </a>
         <a className={styles.link} href="#">
