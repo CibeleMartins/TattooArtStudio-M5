@@ -3,61 +3,57 @@ import styles from './Home.module.css';
 import ButtonH from '../components/ButtonH/ButtonH'
 import ButtonHP from '../components/ButtonHP/ButtonHP'
 
-
-
 const Home = ({text}) => {
-
 
 return (
 
-  <main>
+    <main>
 
-      <div className={styles.flag}>
+        <div className={styles.flag}>
 
-        <div className={styles.elements_flag}>
-          <p>Crie uma conta</p>
+          <div className={styles.elements_flag}>
+            <p>Crie uma conta</p>
+          </div>
+
+          <div className={styles.elements_flag}>
+            <ButtonH text="Aqui"/>
+          </div>
+
         </div>
 
-        <div className={styles.elements_flag}>
-          <ButtonH text="Aqui"/>
+        <div className={styles.text}>
+
+          <h1>Conectando pessoas pela arte</h1>
+          <p>Crie sua conta e receba pré-atendimentos de sessões de tatuagem e solicitações de orçamento  de todo o Brasil</p>
+          
         </div>
 
-      </div>
-
-      <div className={styles.text}>
-
-        <h1>Conectando pessoas pela arte</h1>
-        <p>Crie sua conta e receba pré-atendimentos de sessões de tatuagem e solicitações de orçamento  de todo o Brasil</p>
+        <div className={styles.flag_artist}></div>
         
-      </div>
+        <div className={styles.text}>
 
-      <div className={styles.flag_artist}></div>
-      
-      <div className={styles.text}>
+          <p className={styles.big_p}>Artistas que tatuam em todos os estilos</p>
 
-        <p className={styles.big_p}>Artistas que tatuam em todos os estilos</p>
+          <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
+          <ButtonHP text="Conheça nossos artistas"/>
+          </div>
 
-        <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
-        <ButtonHP text="Conheça nossos artistas"/>
         </div>
 
-      </div>
-
-      <div className={styles.flag_budget}></div>
-      
-      <div className={styles.text}>
-
-        <p className={styles.big_p}>Conheça um pouco da nossa arte</p>
-
-        <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
-        <ButtonHP text="Faça um orçamento" className={styles.button_hp}/>
-        </div>
+        <div className={styles.flag_budget}></div>
         
-      </div>
+        <div className={styles.text}>
 
+          <p className={styles.big_p}>Conheça um pouco da nossa arte</p>
 
-  </main>
-)
+          <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
+          <ButtonHP text="Faça um orçamento"/>
+          </div>
+          
+        </div>
+
+    </main>
+  )
 
 }
 
