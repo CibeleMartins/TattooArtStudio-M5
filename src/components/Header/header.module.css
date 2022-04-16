@@ -11,21 +11,20 @@
   height: 100%;
   background-color: #000000;
   width: 100%;
-
 }
 
 .img {
     width: 120px;
     height: 120px;
     margin: 10px 10px 10px 10px;
-  }
-
+}
 
 .nav { 
     margin-bottom: 50px;
     margin-left: 150px;
     width: 100%;
 }
+
 .link {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -35,8 +34,11 @@
   color: #FFFFFF;
   text-decoration: none;
   margin: 20px;
-  
-  
+  transition: 0.8s;
+}
+
+.link:hover {
+  color: red
 }
 
 @media(max-width: 1000px){
