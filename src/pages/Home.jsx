@@ -25,7 +25,7 @@ return (
         <div className={styles.flag}>
 
           <div className={styles.elements_flag}>
-            <p className={styles.type_animation}>Crie uma conta</p>
+            <p>Crie uma conta</p>
           </div>
 
           <div className={styles.elements_flag}>
@@ -35,18 +35,18 @@ return (
         </div>
 
        
-        <div className={styles.text}>
+        <div className={styles.text_two}>
         
           <h1>Conectando pessoas pela arte</h1>
-          <p className={styles.type_animation}>Crie sua conta e receba pré-atendimentos de sessões de tatuagem e solicitações de orçamento de todo o Brasil</p>
+          <p className={styles.writes_animation}>Crie sua conta e receba pré-atendimentos de sessões de tatuagem e solicitações de orçamento de todo o Brasil</p>
        
         </div>
 
         <div className={styles.flag_artist}></div>
         
-        <div className={styles.text}>
+        <div className={styles.text_two}>
 
-          <p className={styles.big_p}>Artistas que tatuam em todos os estilos</p>
+          <h2 className={styles.text_two}>Artistas que tatuam em todos os estilos</h2>
 
           <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
           <Button text="Conheça nossos artistas" className={styles_b.button_hp}/>
@@ -56,9 +56,9 @@ return (
 
         <div className={styles.flag_budget}></div>
         
-        <div className={styles.text}>
+        <div className={styles.text_two}>
 
-          <p className={styles.big_p}>Conheça um pouco da nossa arte</p>
+          <h2>Conheça um pouco da nossa arte</h2>
 
           <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
             <Button text="Faça um orçamento" className={styles_b.button_hp}/>
