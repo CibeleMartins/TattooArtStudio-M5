@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom"
 import React from 'react';
+
 import styles from './Home.module.css';
 import ButtonH from '../components/ButtonH/ButtonH'
 import ButtonHP from '../components/ButtonHP/ButtonHP'
@@ -16,7 +18,9 @@ return (
           </div>
 
           <div className={styles.elements_flag}>
-            <ButtonH text="Aqui"/>
+            <Link to="/Cadastro">
+              <ButtonH text="Aqui"/>
+            </Link>
           </div>
 
         </div>

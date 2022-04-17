@@ -5,7 +5,7 @@ import Home from "./pages/Home"
 import Contato from "./pages/Contato";
 import Tatuadores from "./pages/Tatuadores";
 import Atendimentos from "./pages/Atendimentos"
-import Artes from "./pages/Artes"
+import Cadastro from "./pages/Cadastro"
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -31,7 +31,7 @@ function App() {
 
             <Route exact path="/Atendimentos" element={<Atendimentos />}></Route>
 
-            <Route exact path="/Artes" element={<Artes />}></Route>
+            <Route exact path="/Cadastro" element={<Cadastro />}></Route>
           </Routes>
         </Container>
 
