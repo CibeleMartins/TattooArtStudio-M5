@@ -7,7 +7,9 @@ function Contato() {
         <> 
             <Header/>
 
-            <h1>Contato</h1>
+            <div className={styles.container}>
+                <h1>Contato</h1>
+            </div>
 
             <Footer/>
         </>

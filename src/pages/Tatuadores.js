@@ -7,7 +7,9 @@ function Tatuadores() {
         <>  
             <Header/>
 
-            <h1>Tatuadores</h1>
+            <div className={styles.container}>
+                <h1>Tatuadores</h1>
+            </div>
 
             <Footer/>
         </>

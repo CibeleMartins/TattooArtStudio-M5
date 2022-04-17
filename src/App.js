@@ -22,18 +22,18 @@ function App() {
         {exibir && <Header/>}
 
         <Container customClass= "min-height">
-      <Routes>
-          <Route exact path="/" element={<Home />}></Route>
+          <Routes>
+            <Route exact path="/" element={<Home />}></Route>
 
-          <Route exact path="/Contato" element={<Contato />}></Route>
+            <Route exact path="/Contato" element={<Contato />}></Route>
 
-          <Route exact path="/Tatuadores" element={<Tatuadores />}></Route>
+            <Route exact path="/Tatuadores" element={<Tatuadores />}></Route>
 
-          <Route exact path="/Atendimentos" element={<Atendimentos />}></Route>
+            <Route exact path="/Atendimentos" element={<Atendimentos />}></Route>
 
-          <Route exact path="/Artes" element={<Artes />}></Route>
-        </Routes>
-      </Container>
+            <Route exact path="/Artes" element={<Artes />}></Route>
+          </Routes>
+        </Container>
 
       {exibir && <Footer/>}
       </div>

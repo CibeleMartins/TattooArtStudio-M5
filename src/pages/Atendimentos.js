@@ -7,7 +7,9 @@ function Atendimentos() {
         <>
             <Header/>
 
-            <h1>Atendimentos</h1>
+            <div className={styles.container}>
+                <h1>Atendimentos</h1>
+            </div>
 
             <Footer/>
         </>
