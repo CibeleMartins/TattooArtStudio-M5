@@ -3,13 +3,10 @@
 
   width: 200px;
   height: 30px;
-  font-family: 'Open Sans', sans-serif;
   background-color: #800505;
   padding: 0.7em 1.2em;
-  text-decoration: none;
   transition: .5s;
-  border: none;
-  color: aliceblue;
+ 
 
 }
 
