@@ -1,7 +1,5 @@
 import React from 'react';
 import styles from './Home.module.css';
-import style_b from '../components/ButtonH/ButtonH.module.css'
-import styles_b from '../components/Button/button.module.css'
 import Button from '../components/Button/Button'
 
 
@@ -19,7 +17,7 @@ return (
           </div>
 
           <div className={styles.elements_flag}>
-            <Button text="Aqui" className={styles_b.button_h}/>
+            <Button text="Aqui" customClass='button_h'/>
           </div>
 
         </div>
