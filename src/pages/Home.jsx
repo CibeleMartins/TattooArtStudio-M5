@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Home.module.css';
 import Button from '../components/Button/Button'
+import styles_b from '../components/Button/Button.module.css'
+
 
 
 
@@ -17,7 +19,7 @@ return (
           </div>
 
           <div className={styles.elements_flag}>
-            <Button text="Aqui" customClass='button_h'/>
+            <Button text="Aqui" className={styles_b.button_h}/>
           </div>
 
         </div>
@@ -35,7 +37,7 @@ return (
           <p className={styles.big_p}>Artistas que tatuam em todos os estilos</p>
 
           <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
-          <Button text="Conheça nossos artistas"/>
+          <Button text="Conheça nossos artistas" className={styles_b.button_hp}/>
           </div>
 
         </div>
@@ -47,7 +49,7 @@ return (
           <p className={styles.big_p}>Conheça um pouco da nossa arte</p>
 
           <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
-          <Button text="Faça um orçamento"/>
+          <Button text="Faça um orçamento" className={styles_b.button_hp}/>
           </div>
           
         </div>
