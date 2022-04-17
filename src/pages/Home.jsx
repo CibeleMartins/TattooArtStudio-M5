@@ -24,11 +24,11 @@ return (
 
         <div className={styles.flag}>
 
-          <div className={styles.elements_flag}>
+          <div className={styles.elements}>
             <p>Crie uma conta</p>
           </div>
 
-          <div className={styles.elements_flag}>
+          <div className={styles.elements}>
             <Button text="Aqui" className={styles_b.button_h}/>
           </div>
 
@@ -46,10 +46,10 @@ return (
         
         <div className={styles.text_two}>
 
-          <h2 className={styles.text_two}>Artistas que tatuam em todos os estilos</h2>
+          <h3 className={styles.text_two}>Artistas que tatuam em todos os estilos</h3>
 
           <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
-          <Button text="Conheça nossos artistas" className={styles_b.button_hp}/>
+          <Button text="Conheça nossos artistas" className={styles_b.button_quite}/>
           </div>
 
         </div>
@@ -58,10 +58,10 @@ return (
         
         <div className={styles.text_two}>
 
-          <h2>Conheça um pouco da nossa arte</h2>
+          <h3>Conheça um pouco da nossa arte</h3>
 
           <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
-            <Button text="Faça um orçamento" className={styles_b.button_hp}/>
+            <Button text="Faça um orçamento" className={styles_b.button_end}/>
           </div>
           
         </div>

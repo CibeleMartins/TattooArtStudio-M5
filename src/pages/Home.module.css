@@ -28,7 +28,7 @@ main {
   
 }
 
-.elements_flag {
+.elements {
 
   width: 25%;
   height: 75px;
@@ -37,7 +37,7 @@ main {
 
 }
 
-.elements_flag p {
+.elements p {
 
   color: white;
   margin-bottom: 5px;
@@ -81,8 +81,8 @@ h1 {
 
 }
 
-.text_two h2 {
-
+.text_two h3 {
+  width: 80%;
   font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 70px;
