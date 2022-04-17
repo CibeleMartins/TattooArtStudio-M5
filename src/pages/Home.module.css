@@ -82,12 +82,14 @@ p {
   width: 75%;
   margin-left: 35px;
   border-right: 2px solid #C4C4C4;
+  overflow: hidden;
+  white-space:pre-wrap;
 
 }
 
 .type_animation {
 
-  animation: blinkCursor 500ms infinite normal;
+  animation: blinkCursor 500ms infinite normal, typing_p 4s steps(40) 1s normal;
 }
 
 @keyframes blinkCursor {
@@ -103,17 +105,21 @@ p {
 
 }
 
-@keyframes typing {
+@keyframes typing_p {
 
   from {
+
+    width: 0;
 
   }
 
   to {
 
+    width: 75%;
+
 
   }
-  
+
 }
 
 .flag_artist {
@@ -138,10 +144,4 @@ p {
 
 }
 
-.rellax {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500px;
-  
-
-}
 

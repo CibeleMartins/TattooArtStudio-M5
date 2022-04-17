@@ -25,7 +25,7 @@ return (
         <div className={styles.flag}>
 
           <div className={styles.elements_flag}>
-            <p>Crie uma conta</p>
+            <p className={styles.type_animation}>Crie uma conta</p>
           </div>
 
           <div className={styles.elements_flag}>
