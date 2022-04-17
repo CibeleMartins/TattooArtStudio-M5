@@ -81,7 +81,39 @@ p {
   font-size: 35px;
   width: 75%;
   margin-left: 35px;
+  border-right: 2px solid #C4C4C4;
 
+}
+
+.type_animation {
+
+  animation: blinkCursor 500ms infinite normal;
+}
+
+@keyframes blinkCursor {
+
+  from {
+
+    border-right-color: #C4C4C4;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+
+}
+
+@keyframes typing {
+
+  from {
+
+  }
+
+  to {
+
+
+  }
+  
 }
 
 .flag_artist {
@@ -105,3 +137,11 @@ p {
   background-size: cover;
 
 }
+
+.rellax {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500px;
+  
+
+}
+
