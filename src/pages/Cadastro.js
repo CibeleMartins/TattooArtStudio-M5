@@ -1,31 +1,47 @@
-import React from "react";
+import React from 'react';
+import { Link } from "react-router-dom"
 
 import styles from "./Cadastro.module.css"
 import { FaUserTie } from 'react-icons/fa';
 import { FaUser } from 'react-icons/fa';
 import banner from "../assets/imagens/banner.jpeg"
+import loginIcon from "../assets/imagens/loginIcon.png"
+import ButtonHP from "../components/ButtonHP/ButtonHP"
 
 
 function Cadastro() {
     return(
         <section className={styles.section}>
             <div className={styles.divUsers}>
-                <div>
-                    <FaUser className={styles.icone}/>
-                    <div className={styles.divTexto}>
-                        <p>Para clientes</p>
+                <div className={styles.divTexto}>
+                    <h1>
+                        Cadastre-se<br/>aqui!
+                    </h1>
+                </div>
+                
+                <div className={styles.divIcons}>
+                    <div className={styles.divIconsDiv}>
+                        <FaUser className={styles.icons}/>
+                        <h3>Para clientes</h3>
+                    </div>
+                    <div className={styles.divIconsDiv}>
+                        <FaUserTie className={styles.icons}/>
+                        <h3>Para tatuadores</h3>
                     </div>
                 </div>
-                <div>
-                    <FaUserTie className={styles.icone}/>
-                    <div>
-                        <p>Para profissionais</p>
-                    </div>
+
+                <div className={styles.buttonReturn}>
+                    <Link to="/">
+                        <ButtonHP text={"Home"} className={styles.buttonReturn}/>
+                    </Link>
                 </div>
             </div>
 
             <div className={styles.imageAndForm}>
-                <img src={banner}/>
+                <div className={styles.loginIcon}>
+                    <img src={loginIcon} alt=""/>
+                </div>
+                <img src={banner} alt=""/>
             </div>
         </section>
     )

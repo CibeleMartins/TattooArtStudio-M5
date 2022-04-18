@@ -13,7 +13,7 @@
   transition: .5s;
   border: none;
   color: aliceblue;
-
+  overflow-y: hidden;
 }
 
 .button_hp:hover {
