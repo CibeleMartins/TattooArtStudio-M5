@@ -28,24 +28,27 @@ main {
   
 }
 
-.elements_flag {
+.elements {
 
   width: 25%;
-  height: auto;
+  height: 75px;
   display: flex;
   justify-content: center;
 
 }
 
-.elements_flag p {
+
+
+.elements p {
 
   color: white;
-  margin-bottom: 10px;
-  margin-left: 15px;
+  font-size: 30px;
+  margin-bottom: 3px;
+  border-right: 2px solid #C4C4C4;
 
 }
 
-.text {
+.text_two {
   width: 100%;
   height: 300px;
   background-color: black;
@@ -55,17 +58,33 @@ main {
 
 }
 
+
 h1 {
 
   font-family: 'Open Sans', sans-serif;
   color: white;
-  font-size: 50px;
+  font-size: 70px;
   margin-left: 30px;
 
 }
 
-.big_p {
 
+.text_two p{
+
+  font-family: 'Open Sans', sans-serif;
+  color: #C4C4C4;
+  font-size: 35px;
+  width: 75%;
+  height: 100px;
+  margin-left: 35px;
+  border-right: 2px solid #C4C4C4;
+  overflow: hidden;
+  white-space:pre-wrap;
+
+}
+
+.text_two h3 {
+  width: 80%;
   font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 70px;
@@ -74,13 +93,43 @@ h1 {
 
 }
 
-p {
+.blink {
+  animation: blinkCursor 500ms infinite normal;
+}
 
-  font-family: 'Open Sans', sans-serif;
-  color: #C4C4C4;
-  font-size: 35px;
-  width: 75%;
-  margin-left: 35px;
+.writes_animation {
+
+  animation: blinkCursor 500ms infinite normal, typing_p 9s steps(40) 1s normal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinkCursor {
+
+  from {
+
+    border-right-color: #C4C4C4;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+
+}
+
+@keyframes typing_p {
+
+  from {
+
+    width: 0;
+
+  }
+
+  to {
+
+    width: 90%;
+
+
+  }
 
 }
 
@@ -105,3 +154,5 @@ p {
   background-size: cover;
 
 }
+
+
