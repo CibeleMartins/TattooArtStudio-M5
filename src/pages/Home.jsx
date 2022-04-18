@@ -25,7 +25,8 @@ return (
         <div className={styles.flag}>
 
           <div className={styles.elements}>
-            <p>Crie uma conta</p>
+
+            <p className={styles.blink}>Crie uma conta</p>
           </div>
 
           <div className={styles.elements}>
@@ -46,7 +47,7 @@ return (
         
         <div className={styles.text_two}>
 
-          <h3 className={styles.text_two}>Artistas que tatuam em todos os estilos</h3>
+          <h3>Artistas que tatuam em todos os estilos</h3>
 
           <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
           <Button text="Conheça nossos artistas" className={styles_b.button_quite}/>

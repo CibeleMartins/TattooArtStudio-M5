@@ -13,10 +13,16 @@
 
     width: 200px;
     height: 30px;
+    font-size: 15px;
     background-color: #800505;
     padding: 0.7em 1.2em;
     transition: .5s;
-   
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   
   }
   

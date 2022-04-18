@@ -37,12 +37,14 @@ main {
 
 }
 
+
+
 .elements p {
 
   color: white;
-  margin-bottom: 5px;
-  margin-left: 15px;
-  border-right: 2px;
+  font-size: 30px;
+  margin-bottom: 3px;
+  border-right: 2px solid #C4C4C4;
 
 }
 
