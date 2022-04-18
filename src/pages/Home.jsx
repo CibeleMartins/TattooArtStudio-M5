@@ -2,21 +2,8 @@ import React from 'react';
 import styles from './Home.module.css';
 import Button from '../components/Button/Button'
 import styles_b from '../components/Button/Button.module.css'
-// import Rellax from 'rellax';
-
-// const rellax = 
-//   new Rellax('.rellax', {
-//     speed: -7,
-//     center: false,
-//     wrapper: null,
-//     round: true,
-//     vertical: true,
-//     horizontal: false
-//   })
 
 const Home = ({text}) => {
-
-
 
 return (
 
@@ -47,7 +34,7 @@ return (
         
         <div className={styles.text_two}>
 
-          <h3>Artistas que tatuam em todos os estilos</h3>
+          <h3 dclassName={styles.animate}>Artistas que tatuam em todos os estilos</h3>
 
           <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
           <Button text="Conheça nossos artistas" className={styles_b.button_quite}/>
@@ -67,11 +54,12 @@ return (
           
         </div>
 
-
-
     </main>
+    
+  
   )
-
+   
 }
+
 
 export default Home;
