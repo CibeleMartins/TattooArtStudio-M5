@@ -10,6 +10,7 @@
   transition: .5s;
   border: none;
   color: aliceblue;
+  overflow-y: hidden;
 
 }
 

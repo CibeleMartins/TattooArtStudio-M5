@@ -1,4 +1,4 @@
 .button { 
     background-color:  rgba(128, 5, 5, 0.88);
-
+    overflow-y: hidden;
 }

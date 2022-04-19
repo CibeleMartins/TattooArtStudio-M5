@@ -8,7 +8,6 @@ import banner from "../assets/imagens/banner.jpeg"
 import loginIcon from "../assets/imagens/loginIcon.png"
 import ButtonHP from "../components/ButtonHP/ButtonHP"
 
-
 function Cadastro() {
     return(
         <section className={styles.section}>
@@ -20,14 +19,16 @@ function Cadastro() {
                 </div>
                 
                 <div className={styles.divIcons}>
-                    <div className={styles.divIconsDiv}>
+                    <Link to="/CadastroCliente" className={styles.divIconsDiv}>
                         <FaUser className={styles.icons}/>
                         <h3>Para clientes</h3>
-                    </div>
-                    <div className={styles.divIconsDiv}>
+                    </Link>s
+                    
+
+                    <Link to="/CadastroTatuador" className={styles.divIconsDiv}>
                         <FaUserTie className={styles.icons}/>
                         <h3>Para tatuadores</h3>
-                    </div>
+                    </Link>s
                 </div>
 
                 <div className={styles.buttonReturn}>
@@ -39,7 +40,9 @@ function Cadastro() {
 
             <div className={styles.imageAndForm}>
                 <div className={styles.loginIcon}>
-                    <img src={loginIcon} alt=""/>
+                    <Link to="/Login">
+                        <img src={loginIcon} alt=""/>
+                    </Link>
                 </div>
                 <img src={banner} alt=""/>
             </div>

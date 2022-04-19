@@ -6,6 +6,9 @@ import Contato from "./pages/Contato";
 import Tatuadores from "./pages/Tatuadores";
 import Atendimentos from "./pages/Atendimentos"
 import Cadastro from "./pages/Cadastro"
+import CadastroCliente from './pages/CadastroCliente';
+import CadastroTatuador from './pages/CadastroTatuador';
+import Login from './pages/Login';
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -32,6 +35,12 @@ function App() {
             <Route exact path="/Atendimentos" element={<Atendimentos />}></Route>
 
             <Route exact path="/Cadastro" element={<Cadastro />}></Route>
+
+            <Route exact path="/CadastroCliente" element={<CadastroCliente />}></Route>
+
+            <Route exact path="/CadastroTatuador" element={<CadastroTatuador />}></Route>
+
+            <Route exact path="/Login" element={<Login />}></Route>
           </Routes>
         </Container>
 
