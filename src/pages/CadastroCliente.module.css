@@ -1,4 +1,4 @@
-.teste {
+.background {
     background-image: url("../assets/imagens/shop.png");
     background-size: cover;
 }
@@ -53,4 +53,9 @@
 .divBotao div {
     width: min-content;
     margin-left: 32%;
+}
+
+.botaoRetorno {
+    width: 57%;
+    margin-top: 3%;
 }

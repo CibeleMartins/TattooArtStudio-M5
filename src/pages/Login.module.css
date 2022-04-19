@@ -1,0 +1,61 @@
+.background {
+    background-image: url("../assets/imagens/studioTatto.jpeg");
+    background-size: cover;
+}
+
+.divLogin {
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    border: 3px solid rgb(99, 10, 10);
+    border-radius: 25px;
+    background-color: white;
+}
+
+.divLogin h2 {
+    width: 80%;
+    padding: 2%;
+}
+
+.divLogin span {
+    color: rgb(99, 10, 10);
+}
+
+.displayForm {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.displayForm div {
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.displayForm label {
+    color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.displayForm input {
+    width: 60%;
+    margin-top: 1%;
+    padding: 1%;
+    border-color: rgb(141, 25, 25);
+    color: rgb(99, 10, 10);
+}
+
+.divBotao {
+    width: 100%;
+}
+
+.divBotao div {
+    width: min-content;
+    margin-left: 32%;
+}
+
+.botaoRetorno {
+    width: 57%;
+    margin-top: 3%;
+}

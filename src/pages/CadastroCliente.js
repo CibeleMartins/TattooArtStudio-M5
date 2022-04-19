@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from "react-router-dom"
+
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
 
@@ -7,7 +10,7 @@ import ButtonHP from "../components/ButtonHP/ButtonHP"
 
 function CadastroCliente() {
     return(
-        <div className={styles.teste}>
+        <div className={styles.background}>
             <Header/>
 
             <div className={styles.divCadastro}>
@@ -40,6 +43,12 @@ function CadastroCliente() {
                     </div>
                 </form>
             </div>
+
+            <Link to="/Cadastro">
+                <div className={styles.botaoRetorno}>
+                    <ButtonHP text="Retornar"/>
+                </div>
+            </Link>
 
             <Footer/>
         </div>
