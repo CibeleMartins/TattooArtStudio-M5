@@ -6,7 +6,7 @@
     border: none;
     color: white;
     white-space: nowrap;
-
+    overflow-y: hidden;
 }
 
 .button_h {
@@ -47,3 +47,4 @@
     cursor: pointer;
   
   }
+

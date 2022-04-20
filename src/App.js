@@ -1,36 +1,51 @@
 import React from 'react';
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home"
+import Contato from "./pages/Contato";
+import Tatuadores from "./pages/Tatuadores";
+import Atendimentos from "./pages/Atendimentos"
+import Cadastro from "./pages/Cadastro"
+import CadastroCliente from './pages/CadastroCliente';
+import CadastroTatuador from './pages/CadastroTatuador';
+import Login from './pages/Login';
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Home from './pages/Home';
-import PageTeste from './pages/PageTeste';
 import Container from './pages/layout/Container/Container';
-
+import './App.css';
 
 function App() {
 
   const exibir = window.location.href.includes('teste')
 
   return (
-
     <BrowserRouter>
+      <div className="App">
+        {exibir && <Header/>}
 
-      {exibir && <Header/>}
-    
-      <Container customClass= "min-height">
+        <Container customClass= "min-height">
+          <Routes>
+            <Route exact path="/" element={<Home />}></Route>
 
-        <Route exact path='/'>
-          <Home/>
-        </Route>
-        
-        <Route exact path='/teste'>
-          <PageTeste/>
-        </Route>
+            <Route exact path="/Contato" element={<Contato />}></Route>
 
-      </Container>
+            <Route exact path="/Tatuadores" element={<Tatuadores />}></Route>
+
+            <Route exact path="/Atendimentos" element={<Atendimentos />}></Route>
+
+            <Route exact path="/Cadastro" element={<Cadastro />}></Route>
+
+            <Route exact path="/CadastroCliente" element={<CadastroCliente />}></Route>
+
+            <Route exact path="/CadastroTatuador" element={<CadastroTatuador />}></Route>
+
+            <Route exact path="/Login" element={<Login />}></Route>
+          </Routes>
+        </Container>
 
       {exibir && <Footer/>}
+      </div>
 
     </BrowserRouter>
 

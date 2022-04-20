@@ -1,0 +1,107 @@
+*{
+    overflow-x: hidden;
+}
+
+.section {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.divUsers {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    overflow-y: hidden;
+}
+
+.divTexto {
+    width: 80%;
+}
+
+.divTexto h1 {
+    color: white;
+    width: 100%;
+    font-size: 5em;
+    padding: 5%;
+    margin-top: 7%;
+    display:flex;
+}
+
+.divIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.icons {
+    color: white;
+    font-size: 4em;
+}
+
+.divIcons h3 {
+    color: white;
+}
+
+.divIconsDiv {
+    border: 1.5px solid rgb(99, 10, 10);
+    width: 25%;
+    padding: 1%;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.divIconsDiv:hover {
+    cursor: pointer;
+    border-color: white;
+}
+
+.divIconsDiv:hover > .icons {
+    color: rgb(99, 10, 10);
+}
+
+.divIconsDiv:hover > h3 {
+    color: rgb(99, 10, 10);
+}
+
+.imageAndForm {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.imageAndForm div {
+    width: 35px;
+    height: fit-content;
+    position: relative;
+    right: -430px;
+    overflow-y:hidden;
+    margin-bottom: 5%;
+}
+
+.imageAndForm div:hover {
+    cursor: pointer;
+}
+
+.loginIcon {
+    width: fit-content;
+    height: fit-content;
+}
+
+.imageAndForm img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+}
+
+.buttonReturn {
+    position: relative;
+    bottom: -120px;
+    left: -150px;
+}
