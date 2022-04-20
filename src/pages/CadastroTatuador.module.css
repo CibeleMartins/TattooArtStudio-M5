@@ -52,10 +52,13 @@
 
 .divBotao div {
     width: min-content;
-    margin-left: 32%;
+    margin-right: 32%;
+    width: 100%;
 }
 
 .botaoRetorno {
     width: 57%;
     margin-top: 3%;
+    position: relative;
+    left: -42px;
 }

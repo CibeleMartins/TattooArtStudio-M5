@@ -5,7 +5,7 @@ import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
 
 import styles from "./CadastroCliente.module.css"
-import ButtonHP from "../components/ButtonHP/ButtonHP"
+import ButtonPages from "../components/Button/ButtonPages"
 
 
 function CadastroCliente() {
@@ -38,7 +38,7 @@ function CadastroCliente() {
 
                     <div className={styles.divBotao}>
                         <div>
-                            <ButtonHP text="Cadastrar cliente"/>
+                            <ButtonPages text="Cadastrar cliente"/>
                         </div>
                     </div>
                 </form>
@@ -46,7 +46,7 @@ function CadastroCliente() {
 
             <Link to="/Cadastro">
                 <div className={styles.botaoRetorno}>
-                    <ButtonHP text="Retornar"/>
+                    <ButtonPages text="Retornar"/>
                 </div>
             </Link>
 

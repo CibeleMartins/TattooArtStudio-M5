@@ -16,11 +16,13 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+    height: 100%;
     overflow-y: hidden;
 }
 
 .divTexto {
     width: 80%;
+    overflow-y: hidden;
 }
 
 .divTexto h1 {
@@ -103,5 +105,6 @@
 .buttonReturn {
     position: relative;
     bottom: -120px;
-    left: -150px;
+    left: -185px;
+    overflow-y: hidden;
 }

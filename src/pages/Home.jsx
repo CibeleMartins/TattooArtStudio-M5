@@ -19,7 +19,9 @@ return (
           </div>
 
           <div className={styles.elements}>
-            <Button text="Aqui" className={styles_b.button_h}/>
+            <Link to="/Cadastro">
+              <Button text="Aqui" className={styles_b.button_h}/>
+            </Link>
           </div>
 
         </div>

@@ -6,7 +6,7 @@ import { FaUserTie } from 'react-icons/fa';
 import { FaUser } from 'react-icons/fa';
 import banner from "../assets/imagens/banner.jpeg"
 import loginIcon from "../assets/imagens/loginIcon.png"
-import ButtonHP from "../components/ButtonHP/ButtonHP"
+import ButtonPages from '../components/Button/ButtonPages';
 
 function Cadastro() {
     return(
@@ -33,7 +33,7 @@ function Cadastro() {
 
                 <div className={styles.buttonReturn}>
                     <Link to="/">
-                        <ButtonHP text={"Home"} className={styles.buttonReturn}/>
+                        <ButtonPages text={"Home"}/>
                     </Link>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
 
 import styles from "./Login.module.css"
-import ButtonHP from "../components/ButtonHP/ButtonHP"
+import ButtonPages from "../components/Button/ButtonPages"
 
 function Login() {
     return(
@@ -26,7 +26,7 @@ function Login() {
 
                     <div className={styles.divBotao}>
                         <div>
-                            <ButtonHP text="Entrar"/>
+                            <ButtonPages text="Entrar"/>
                         </div>
                     </div>
                 </form>
@@ -34,7 +34,7 @@ function Login() {
 
             <Link to="/Cadastro">
                 <div className={styles.botaoRetorno}>
-                    <ButtonHP text="Retornar"/>
+                    <ButtonPages text="Retornar"/>
                 </div>
             </Link>
 
