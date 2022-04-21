@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Home from "./pages/Home"
 import Contato from "./pages/Contato";
@@ -25,23 +25,39 @@ function App() {
         {exibir && <Header/>}
 
         <Container customClass= "min-height">
-          <Routes>
-            <Route exact path="/" element={<Home />}></Route>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
 
-            <Route exact path="/Contato" element={<Contato />}></Route>
+            <Route exact path="/Contato">
+              <Contato />
+            </Route>
 
-            <Route exact path="/Tatuadores" element={<Tatuadores />}></Route>
+            <Route exact path="/Tatuadores">
+              <Tatuadores />
+            </Route>
 
-            <Route exact path="/Atendimentos" element={<Atendimentos />}></Route>
+            <Route exact path="/Atendimentos">
+              <Atendimentos />
+            </Route>
 
-            <Route exact path="/Cadastro" element={<Cadastro />}></Route>
+            <Route exact path="/Cadastro">
+              <Cadastro />
+            </Route>
 
-            <Route exact path="/CadastroCliente" element={<CadastroCliente />}></Route>
+            <Route exact path="/CadastroCliente">
+              <CadastroCliente />
+            </Route>
 
-            <Route exact path="/CadastroTatuador" element={<CadastroTatuador />}></Route>
+            <Route exact path="/CadastroTatuador">
+              <CadastroTatuador />
+            </Route>
 
-            <Route exact path="/Login" element={<Login />}></Route>
-          </Routes>
+            <Route exact path="/Login">
+              <Login />
+            </Route>
+          </Switch>
         </Container>
 
       {exibir && <Footer/>}
