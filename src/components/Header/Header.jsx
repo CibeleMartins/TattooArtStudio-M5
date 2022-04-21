@@ -12,18 +12,16 @@ const Header = () => {
       </Link>
 
       <nav className={styles.nav}>
-        <a>
-          <Link to="/" className={styles.link}>Home</Link>
-        </a>
-        <a>
-          <Link to="/Contato" className={styles.link}>Contato</Link>
-        </a>
-        <a>
-          <Link to="/Tatuadores" className={styles.link}>Tatuadores</Link>
-        </a>
-        <a>
-          <Link to="/Atendimentos" className={styles.link}>Atendimentos</Link>
-        </a>
+        <Link to="/" className={styles.link}>Home</Link>
+        
+          
+        <Link to="/Contato" className={styles.link}>Contato</Link>
+      
+      
+        <Link to="/Tatuadores" className={styles.link}>Tatuadores</Link>
+      
+      
+        <Link to="/Atendimentos" className={styles.link}>Atendimentos</Link>
       </nav>
     </header>
   );
