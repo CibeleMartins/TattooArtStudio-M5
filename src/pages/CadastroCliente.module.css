@@ -9,7 +9,7 @@
     margin-left: 15%;
     border: 3px solid rgb(99, 10, 10);
     border-radius: 25px;
-    background-color: rgba(24, 23, 23, 0.952);
+    background-color: rgba(12, 11, 11, 0.952);
 }
 
 .divCadastro h2 {
@@ -23,7 +23,7 @@
 
 .divCadastro span {
     color: rgb(99, 10, 10);
-    text-shadow: 1px 1px white;
+    text-shadow: 0.5px 0.5px white;
 }
 
 .displayForm {
