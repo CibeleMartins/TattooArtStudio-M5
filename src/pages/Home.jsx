@@ -38,7 +38,7 @@ return (
         
         <div className={styles.text_two}>
 
-          <h3 dclassName={styles.animate}>Artistas que tatuam em todos os estilos</h3>
+          <h3>Artistas que tatuam em todos os estilos</h3>
 
           <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
           <Button text="Conheça nossos artistas" className={styles_b.button_quite}/>
