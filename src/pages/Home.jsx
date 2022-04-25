@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Home.module.css';
-import Button from '../components/Button/Button'
-import styles_b from '../components/Button/Button.module.css'
+import Button from '../components/Button/Button';
+import styles_b from '../components/Button/Button.module.css';
+import logo from '../assets/imagens/logoIcon.png';
 
 const Home = ({text}) => {
 
@@ -11,8 +12,11 @@ return (
 
         <div className={styles.flag}>
 
-          <div className={styles.elements}>
+          <div>
+            <img src={logo}></img>
+          </div>
 
+          <div className={styles.elements}>
             <p className={styles.blink}>Crie uma conta</p>
           </div>
 
