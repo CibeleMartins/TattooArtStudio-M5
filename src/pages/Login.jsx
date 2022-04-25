@@ -13,7 +13,7 @@ function Login() {
         let nome = document.getElementById("nome")
         let senha = document.getElementById("senha")
     
-        if(nome.value != "" && senha.value != "") {
+        if(nome.value !== "" && senha.value !== "") {
             alert("Bem-vindo(a) de volta!")
         }
     }

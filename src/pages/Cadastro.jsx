@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from "react-router-dom"
 
 import styles from "./Cadastro.module.css"
-import { FaUserTie } from 'react-icons/fa';
 import { FaUser } from 'react-icons/fa';
 import banner from "../assets/imagens/banner.jpeg"
 import loginIcon from "../assets/imagens/loginIcon.png"

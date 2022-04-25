@@ -16,7 +16,7 @@ function CadastroCliente() {
         let email = document.getElementById("email")
         let tel = document.getElementById("tel")
 
-        if(nome.value != "" && senha.value != "" && email.value != "" && tel.value != "") {
+        if(nome.value !== "" && senha.value !== "" && email.value !== "" && tel.value !== "") {
             alert("Cliente cadastrado com sucesso!")
         }
     }
