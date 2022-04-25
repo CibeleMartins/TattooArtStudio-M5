@@ -4,6 +4,17 @@ import Footer from "../components/Footer/Footer"
 import ButtonPages from "../components/Button/ButtonPages"
 
 function Contato() {
+
+    function checaInput() {
+        let email= document.getElementById("email")
+        let texto= document.getElementById("texto")
+        let tel= document.getElementById("tel")
+
+        if(email.value !== "" && texto.value !== ""  && tel.value !== "") {
+            alert("Mensagem enviada com sucesso!")
+        }
+    }
+
     return(
         <> 
             <Header/>
@@ -24,12 +35,12 @@ function Contato() {
                     </div>
 
                     <div>
-                        <label htmlFor="email">Envie sua mensagem:</label><br/>
-                         <textarea></textarea>
+                        <label htmlFor="texto">Envie sua mensagem:</label><br/>
+                         <textarea id="texto" required></textarea>
                     </div>
 
                     <div>
-                     <ButtonPages text="Enviar mensagem"/>
+                     <ButtonPages text="Enviar mensagem" onClick={checaInput}/>
                     </div>
 
                                     
