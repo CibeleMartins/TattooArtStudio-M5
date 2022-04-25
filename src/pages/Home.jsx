@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.module.css';
 import Button from '../components/Button/Button';
-import styles_b from '../components/Button/Button.module.css';
+import styles_b from '../components/Button/button.module.css';
 import logo from '../assets/imagens/loginIcon.png';
 
 const Home = ({text}) => {
