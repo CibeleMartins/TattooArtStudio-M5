@@ -10,7 +10,7 @@ function Contato() {
 
             
             
-            <div className={styles.divCadastro}>
+            <div className={styles.divContato}>
                 <h2> Envie suas duvida ou sugestões</h2>
                 <form className={styles.displayForm}>
 
