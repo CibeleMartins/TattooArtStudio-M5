@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom"
 import React from 'react';
-
+import { Link } from "react-router-dom"
 import styles from './Home.module.css';
 import Button from '../components/Button/Button'
-import styles_b from '../components/Button/Button.module.css'
+import styles_b from '../components/Button/button.module.css'
 
 const Home = ({text}) => {
 
