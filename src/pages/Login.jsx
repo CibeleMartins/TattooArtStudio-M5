@@ -14,7 +14,7 @@ function Login() {
         let senha = document.getElementById("senha")
     
         if(nome.value !== "" && senha.value !== "") {
-            alert("Bem-vindo(a) de volta!")
+            alert("Bem-vindo(a) de volta")
         }
     }
 
