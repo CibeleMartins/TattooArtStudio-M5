@@ -7,7 +7,6 @@ import Tatuadores from "./pages/Tatuadores";
 import Atendimentos from "./pages/Atendimentos"
 import Cadastro from "./pages/Cadastro"
 import CadastroCliente from './pages/CadastroCliente';
-import CadastroTatuador from './pages/CadastroTatuador';
 import Login from './pages/Login';
 
 import Header from './components/Header/Header'
@@ -48,10 +47,6 @@ function App() {
 
             <Route exact path="/CadastroCliente">
               <CadastroCliente />
-            </Route>
-
-            <Route exact path="/CadastroTatuador">
-              <CadastroTatuador />
             </Route>
 
             <Route exact path="/Login">

@@ -36,9 +36,10 @@
 
 .divIcons {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
 }
 
 .icons {
@@ -52,10 +53,12 @@
 
 .divIconsDiv {
     border: 1.5px solid rgb(99, 10, 10);
-    width: 25%;
-    padding: 1%;
+    width: 60%;
     border-radius: 25px;
     text-decoration: none;
+    position: relative;
+    left: 18%;
+    padding: 2%;
 }
 
 .divIconsDiv:hover {
@@ -105,6 +108,8 @@
 .buttonReturn {
     position: relative;
     bottom: -120px;
-    left: -185px;
+    width: 70%;
     overflow-y: hidden;
+    margin-left: 15%;
+    margin-right: 15%;
 }

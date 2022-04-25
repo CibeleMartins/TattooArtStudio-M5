@@ -22,13 +22,7 @@ function Cadastro() {
                     <Link to="/CadastroCliente" className={styles.divIconsDiv}>
                         <FaUser className={styles.icons}/>
                         <h3>Para clientes</h3>
-                    </Link>s
-                    
-
-                    <Link to="/CadastroTatuador" className={styles.divIconsDiv}>
-                        <FaUserTie className={styles.icons}/>
-                        <h3>Para tatuadores</h3>
-                    </Link>s
+                    </Link>
                 </div>
 
                 <div className={styles.buttonReturn}>
