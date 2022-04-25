@@ -1,36 +1,62 @@
 import React from 'react';
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+import Home from "./pages/Home"
+import Contato from "./pages/Contato";
+import Tatuadores from "./pages/Tatuadores";
+import Atendimentos from "./pages/Atendimentos"
+import Cadastro from "./pages/Cadastro"
+import CadastroCliente from './pages/CadastroCliente';
+import Login from './pages/Login';
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Home from './pages/Home';
-import PageTeste from './pages/PageTeste';
 import Container from './pages/layout/Container/Container';
-
+import './App.css';
 
 function App() {
 
   const exibir = window.location.href.includes('teste')
 
   return (
-
     <BrowserRouter>
+      <div className="App">
+        {exibir && <Header/>}
 
-      {exibir && <Header/>}
-    
-      <Container customClass= "min-height">
+        <Container customClass= "min-height">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
 
-        <Route exact path='/'>
-          <Home/>
-        </Route>
-        
-        <Route exact path='/teste'>
-          <PageTeste/>
-        </Route>
+            <Route exact path="/Contato">
+              <Contato />
+            </Route>
 
-      </Container>
+            <Route exact path="/Tatuadores">
+              <Tatuadores />
+            </Route>
+
+            <Route exact path="/Atendimentos">
+              <Atendimentos />
+            </Route>
+
+            <Route exact path="/Cadastro">
+              <Cadastro />
+            </Route>
+
+            <Route exact path="/CadastroCliente">
+              <CadastroCliente />
+            </Route>
+
+            <Route exact path="/Login">
+              <Login />
+            </Route>
+          </Switch>
+        </Container>
 
       {exibir && <Footer/>}
+      </div>
 
     </BrowserRouter>
 

@@ -1,16 +1,14 @@
 .button { 
-
     background-color:  rgba(128, 5, 5, 0.88);
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     border: none;
     color: white;
     white-space: nowrap;
-
+    overflow-y: hidden;
 }
 
 .button_h {
-
     width: 100px;
     height: 30px;
     font-size: 15px;
@@ -22,15 +20,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  
   }
   
   .button_h:hover {
-  
     background-color: black;
     cursor: pointer;
-  
   }
 
   
@@ -58,3 +52,4 @@
     cursor: pointer;
   
   }
+

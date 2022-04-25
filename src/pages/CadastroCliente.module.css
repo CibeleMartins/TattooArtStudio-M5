@@ -1,0 +1,72 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+.background {
+    background-image: url("../assets/imagens/shop.png");
+    background-size: cover;
+}
+
+.divCadastro {
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 10px;
+    background-color: rgba(12, 11, 11, 0.952);
+}
+
+.divCadastro h2 {
+    width: 80%;
+    padding: 2%;
+    color: white;
+    text-shadow: 1.5px 1.5px rgb(99, 10, 10);
+    font-size: 2.2em;
+    margin-left: 8%;
+}
+
+.divCadastro span {
+    color: rgb(99, 10, 10);
+    text-shadow: 0.5px 0.5px white;
+}
+
+.displayForm {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.displayForm div {
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.displayForm label {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.displayForm input {
+    width: 60%;
+    margin-top: 1%;
+    padding: 1%;
+    border-color: rgb(141, 25, 25);
+    color: rgb(99, 10, 10);
+}
+
+.divBotao {
+    width: 100%;
+}
+
+.divBotao div {
+    width: min-content;
+    margin-right: 32%;
+    width: 100%;
+}
+
+.botaoRetorno {
+    width: 57%;
+    margin-top: 3%;
+    position: relative;
+    left: -42px;
+}

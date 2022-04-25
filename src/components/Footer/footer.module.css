@@ -3,17 +3,81 @@
 * {
     margin: 0%;
     padding: 0%;
-  }
+}
   
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 2%;
+  margin-top: 5%;
+}
+
+.section{
+  display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width:33%;
+}
+
+.section p {
+  font-size: 1.5em;
+}
+
+.sectionRedesSociaisParagrafo{
+  display: flex;
+  flex-direction: column;
+  width:33%;
+}
+
+.sectionRedesSociaisParagrafo p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: 13%;
+}
+
+.sectionRedesSociaisParagrafo span {
+  color: red;
+}
+
+.sectionRedesSoaciais{
+  display: flex;
+  margin: 5px 20px 5px 10px;
+}
+
+.icone {
+  padding: 5%;
+  font-size: 2.5em;
+  margin-bottom: 10%;
+  transition: 0.8s;
+  width: fit-content;
+  height: fit-content;
+}
+
+.icone:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.sectionInformacoes{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width:33%;
+  margin-top: 15px;
+}
+
+.sectionInformacoes p {
+  font-size: 1.5em;
+}
+
+@media(max-width: 1000px){
   .footer {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: #000000;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-
-    
+    font-size: 15px;
   }
-
+}
+  
 

@@ -1,4 +1,4 @@
-import styles from "./button.module.css";
+import styles from "./ButtonPages.module.css";
 import React from "react";
 
 const Button = ({ onClick, text, className}) => {
