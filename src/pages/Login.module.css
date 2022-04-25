@@ -1,3 +1,7 @@
+*{
+    font-family: "Open Sans", sans-serif;
+}
+
 .background {
     background-image: url("../assets/imagens/studioTatto.jpeg");
     background-size: cover;

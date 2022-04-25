@@ -10,7 +10,7 @@ import ButtonPages from "../components/Button/ButtonPages"
 
 function CadastroCliente() {
     
-    function checaInput(e) {
+    function checaInput() {
         let nome = document.getElementById("nome")
         let senha = document.getElementById("senha")
         let email = document.getElementById("email")
