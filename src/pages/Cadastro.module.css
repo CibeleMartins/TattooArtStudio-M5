@@ -1,5 +1,6 @@
 *{
     overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
 }
 
 .section {
@@ -21,24 +22,27 @@
 }
 
 .divTexto {
-    width: 80%;
+    width: 90%;
     overflow-y: hidden;
+    margin-left: 5%;
 }
 
 .divTexto h1 {
     color: white;
-    width: 100%;
+    width: 80%;
     font-size: 5em;
     padding: 5%;
     margin-top: 7%;
-    display:flex;
+    text-align: center;
+    text-shadow: 2px 2px rgb(218, 70, 70);
 }
 
 .divIcons {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
 }
 
 .icons {
@@ -52,10 +56,12 @@
 
 .divIconsDiv {
     border: 1.5px solid rgb(99, 10, 10);
-    width: 25%;
-    padding: 1%;
+    width: 60%;
     border-radius: 25px;
     text-decoration: none;
+    position: relative;
+    left: 18%;
+    padding: 2%;
 }
 
 .divIconsDiv:hover {
@@ -104,7 +110,9 @@
 
 .buttonReturn {
     position: relative;
-    bottom: -120px;
-    left: -185px;
+    bottom: -100px;
+    width: 70%;
     overflow-y: hidden;
+    margin-left: 15%;
+    margin-right: 15%;
 }

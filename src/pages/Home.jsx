@@ -52,7 +52,9 @@ return (
           <h3>Conheça um pouco da nossa arte</h3>
 
           <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
-            <Button text="Faça um orçamento" className={styles_b.button_end}/>
+            <Link to="/Atendimentos">
+              <Button text="Solicite um atendimento" className={styles_b.button_end}/>
+            </Link>
           </div>
           
         </div>
