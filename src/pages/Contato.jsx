@@ -8,8 +8,7 @@ function Contato() {
         <> 
             <Header/>
 
-            
-            
+            <div className={styles.Fundo}>
             <div className={styles.divContato}>
                 <h2> Envie suas duvida ou sugestões</h2>
                 <form className={styles.displayForm}>
@@ -37,6 +36,7 @@ function Contato() {
                 </form>
             </div>
 
+            </div>
 
             <Footer/>
         </>
