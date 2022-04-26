@@ -27,7 +27,12 @@ return (
         <div className={styles.text_button}>
 
           <div className={styles.elements}>
-            <p className={styles.blink}>Crie uma conta</p>
+
+              <div className={styles.elements}>
+                <Button onClick={()=> navigation.push('/Cadastro')} text="Aqui" className={styles_b.button_h}/>
+              </div>
+              
+
           </div>
 
             <div className={styles.elements}>
