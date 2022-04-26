@@ -18,20 +18,12 @@ return (
     <main>
 
         <div className={styles.flag}>
-<<<<<<< HEAD
 
           <div className={styles.login}>
             <div>
             <img onClick={()=> navigation.push('/Login')} alt='/logo' src={logo}></img>
             </div>
-=======
-        
-        
-          <div>
-            <img src={logo}></img>
->>>>>>> main
           </div>
-        
 
           <div className={styles.text_button}>
             <div className={styles.elements}>
