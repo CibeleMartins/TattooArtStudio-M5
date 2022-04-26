@@ -14,6 +14,7 @@ main {
   
 }
 
+
 .flag {
 
   width: 100%;
@@ -24,9 +25,30 @@ main {
   background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+.login {
+
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-right: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+
+}
+
+
+.text_button {
+
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
   align-items: flex-end;
   justify-content:center;
-  
+
 }
 
 .elements {
