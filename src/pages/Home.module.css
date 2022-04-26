@@ -114,11 +114,7 @@ h3:hover{
 .writes_animation {
 
   animation: blinkCursor 400ms infinite normal, typing_p 9s steps(40) 1s infinite normal;
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> 0ec31031b3f0993818e85afcade271db83b19dfc
 }
 
 @keyframes blinkCursor {
