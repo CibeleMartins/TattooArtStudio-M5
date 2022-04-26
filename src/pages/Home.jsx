@@ -11,10 +11,12 @@ return (
     <main>
 
         <div className={styles.flag}>
-
+        
+        
           <div>
             <img src={logo}></img>
           </div>
+        
 
           <div className={styles.elements}>
             <p className={styles.blink}>Crie uma conta</p>
