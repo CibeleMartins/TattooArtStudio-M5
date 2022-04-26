@@ -27,7 +27,7 @@ return (
         <div className={styles.text_button}>
 
           <div className={styles.elements}>
-            <p className={styles.blink}>Crie uma conta</p>
+            <p className={styles.writes_animation}>Crie uma conta</p>
           </div>
 
             <div className={styles.elements}>
@@ -41,7 +41,7 @@ return (
       <div className={styles.text_two}>
         
         <h1>Conectando pessoas pela arte</h1>
-        <p className={styles.writes_animation}>Crie sua conta e receba pré-atendimentos de sessões de tatuagem e solicitações de orçamento de todo o Brasil</p>
+        <p>Crie sua conta e receba pré-atendimentos de sessões de tatuagem e solicitações de orçamento de todo o Brasil</p>
       
       </div>
 
