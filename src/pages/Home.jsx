@@ -24,7 +24,7 @@ return (
         
 
           <div className={styles.elements}>
-            <p className={styles.blink}>Crie uma conta</p>
+            <p className={styles.blink}>Crie uma conta..........</p>
           </div>
 
           <div className={styles.elements}>
