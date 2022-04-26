@@ -14,6 +14,7 @@ main {
   
 }
 
+
 .flag {
 
   width: 100%;
@@ -24,9 +25,30 @@ main {
   background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+.login {
+
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-right: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+
+}
+
+
+.text_button {
+
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
   align-items: flex-end;
   justify-content:center;
-  
+
 }
 
 .elements {
@@ -109,6 +131,10 @@ h3:hover{
 
 .writes_animation {
   animation: blinkCursor 400ms infinite normal, typing_p 9s steps(40) 1s infinite normal;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 794dc6b4c3f9344236f496b7c6e3fb93966cd262
 }
 
 @keyframes blinkCursor {
