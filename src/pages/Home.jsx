@@ -21,7 +21,7 @@ return (
 
           <div className={styles.login}>
             <div>
-            <img alt='/logo' src={logo}></img>
+            <img onClick={()=> navigation.push('/Login')} alt='/logo' src={logo}></img>
             </div>
           </div>
 
@@ -37,12 +37,12 @@ return (
 
         </div>
 
-       
+      
         <div className={styles.text_two}>
         
           <h1>Conectando pessoas pela arte</h1>
           <p className={styles.writes_animation}>Crie sua conta e receba pré-atendimentos de sessões de tatuagem e solicitações de orçamento de todo o Brasil</p>
-       
+      
         </div>
 
         <div className={styles.flag_artist}></div>
