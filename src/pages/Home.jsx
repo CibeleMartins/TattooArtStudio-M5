@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 import styles from './Home.module.css';
 import Button from '../components/Button/Button';
-import styles_b from '../components/Button/button.module.css';
+import styles_b from '../components/Button/Button.module.css';
 import logo from '../assets/imagens/loginIcon.png';
 
 
