@@ -1,7 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-
 import styles from './Home.module.css';
 import Button from '../components/Button/Button';
 import styles_b from '../components/Button/Button.module.css';
@@ -27,7 +26,7 @@ return (
 
           <div className={styles.text_button}>
             <div className={styles.elements}>
-              <p className={styles.writes_animation}>Crie uma conta</p>
+              <p className={styles.writes_animation}>Crie uma conta...</p>
             </div>
 
               <div className={styles.elements}>
