@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
@@ -50,7 +51,7 @@ return (
         
         <div className={styles.text_two}>
 
-          <h3>Artistas que tatuam em todos os estilos</h3>
+          <h3 className={styles.animate}>Artistas que tatuam em todos os estilos</h3>
 
           <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
           <Button onClick={()=> navigation.push('/Tatuadores')} text="Conheça nossos artistas" 
