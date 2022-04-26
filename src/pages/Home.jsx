@@ -48,7 +48,8 @@ return (
           <h3>Artistas que tatuam em todos os estilos</h3>
 
           <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
-          <Button text="Conheça nossos artistas" className={styles_b.button_quite}/>
+          <Button onClick={()=> navigation.push('/Tatuadores')} text="Conheça nossos artistas" 
+          className={styles_b.button_quite}/>
           </div>
 
         </div>
@@ -60,7 +61,7 @@ return (
           <h3>Conheça um pouco da nossa arte</h3>
 
           <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
-            <Button text="Faça um orçamento" className={styles_b.button_end}/>
+            <Button onClick={()=> navigation.push('/Atendimentos')} text="Faça um orçamento" className={styles_b.button_end}/>
           </div>
           
         </div>
