@@ -33,6 +33,7 @@ return (
               <div className={styles.elements}>
                 <Button onClick={()=> navigation.push('/Cadastro')} text="Aqui" className={styles_b.button_h}/>
               </div>
+              
           </div>
 
         </div>
