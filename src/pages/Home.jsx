@@ -1,10 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+
 import styles from './Home.module.css';
 import Button from '../components/Button/Button';
 import styles_b from '../components/Button/button.module.css';
 import logo from '../assets/imagens/loginIcon.png';
 
 const Home = ({text}) => {
+
+  const navigate = useNavigate()
 
 return (
 
@@ -23,7 +28,7 @@ return (
           </div>
 
           <div className={styles.elements}>
-            <Button text="Aqui" className={styles_b.button_h}/>
+            <Button onClick={()=> navigate('/Cadastro')} text="Aqui" className={styles_b.button_h}/>
           </div>
 
         </div>
