@@ -1,6 +1,4 @@
 import styles from "./Contato.module.css"
-import Header from "../components/Header/Header"
-import Footer from "../components/Footer/Footer"
 import ButtonPages from "../components/Button/ButtonPages"
 
 function Contato() {
@@ -18,7 +16,7 @@ function Contato() {
     return(
         <> 
             <div className={styles.Fundo}>
-                <Header/>
+               
 
                 <div className={styles.divContato}>
                     <h2> Envie suas duvida ou sugestões</h2>
@@ -45,7 +43,7 @@ function Contato() {
                     </form>
                 </div>
 
-                <Footer/>
+                
             </div>
         </>
     )
