@@ -32,8 +32,29 @@ const ShowScheduling = () => {
 
     console.log(id)
      api.delete(`/atendimentos/${id}`).then(() => setUpdate(true)); 
-
-}
+    }
+      return (
+      <div>
+        <div style={{ display: "flex", flexWrap: "wrap" }}>
+          {Scheduling.map((atendimentos) => {
+            return (
+            <Card
+              key={atendimentos._id}
+              id={atendimentos._id}
+              nome={atendimentos.nome}
+              email ={atendimentos.email}
+              telefone={atendimentos.telefone}
+              cidade={atendimentos.cidade}
+              data={atendimentos.data}
+              horário={atendimentos.horário}
+              deletar={ExcluirCard}
+              edit={EditarCard}
+            />
+          );
+        })}
+      </div>
+    </div>
+  );
 
 };
 
