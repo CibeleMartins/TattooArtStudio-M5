@@ -7,9 +7,9 @@ import logo from "../../assets/imagens/logo.png";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <Link to="/" className={styles.link}>
-        <img src={logo} alt={logo} className={styles.img}/>
-      </Link>
+    
+      <img src={logo} alt={logo} className={styles.img}/>
+     
 
       <nav className={styles.nav}>
         <Link to="/" className={styles.link}>Home</Link>
