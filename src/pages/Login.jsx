@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom"
 
-import Header from "../components/Header/Header"
-import Footer from "../components/Footer/Footer"
-
 import styles from "./Login.module.css"
 import ButtonPages from "../components/Button/ButtonPages"
 
@@ -19,8 +16,9 @@ function Login() {
     }
 
     return(
+
         <div className={styles.background}>
-            <Header/>
+           
             <div className={styles.divLogin}>
                 <h2>Faça seu Login e obtenha <span>o melhor</span> da nossa plataforma</h2>
                 <form className={styles.displayForm}>
@@ -48,7 +46,7 @@ function Login() {
                 </div>
             </Link>
 
-            <Footer/>
+            
         </div>
     )
 }
