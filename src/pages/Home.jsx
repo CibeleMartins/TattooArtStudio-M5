@@ -5,7 +5,7 @@ import styles from './Home.module.css';
 import Button from '../components/Button/Button';
 import styles_b from '../components/Button/Button.module.css';
 import logo from '../assets/imagens/loginIcon.png';
-import Button from '../components/Button/Button';
+
 
 const Home = ({text}) => {
 
@@ -31,7 +31,7 @@ return (
           </div>
 
           <div className={styles.elements}>
-            <ButtonDois onClick={()=> navigation.push('/Cadastro')} text="Aqui" className={styles_b.button_h}/>
+            <Button onClick={()=> navigation.push('/Cadastro')} text="Aqui" className={styles_b.button_h}/>
           </div>
               
         </div>
