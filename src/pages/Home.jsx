@@ -22,12 +22,15 @@ return (
             <img onClick={()=> navigation.push('/Login')} alt='/logo' src={logo}></img>
           </div>
 
-        </div>
+          <div className={styles.text_button}>
+            <div className={styles.elements}>
+              <p className={styles.writes_animation}>Crie uma conta...</p>
+            </div>
 
-        <div className={styles.text_button}>
-
-          <div className={styles.elements}>
-            <p className={styles.writes_animation}>Crie uma conta</p>
+              <div className={styles.elements}>
+                <Button onClick={()=> navigation.push('/Cadastro')} text="Aqui" className={styles_b.button_h}/>
+              </div>
+              
           </div>
 
             <div className={styles.elements}>
@@ -40,8 +43,8 @@ return (
 
       <div className={styles.text_two}>
         
-        <h1>Conectando pessoas pela arte</h1>
-        <p>Crie sua conta e realize pré-atendimentos de sessões de tatuagem e solicitações de orçamento de todo o Brasil</p>
+          <h1>Conectando pessoas pela arte</h1>
+          <p>Crie sua conta e realize pré-atendimentos de sessões de tatuagem e solicitações de orçamento de todo o Brasil</p>
       
       </div>
 
@@ -49,7 +52,7 @@ return (
         
       <div className={styles.text_two}>
 
-        <h3>Artistas que tatuam em todos os estilos</h3>
+          <h3 className={styles.animate}>Artistas que tatuam em todos os estilos</h3>
 
         <div style={{display: "flex", flexDirection: "column", alignItems:"flex-end"}}>
         <Button onClick={()=> navigation.push('/Tatuadores')} text="Conheça nossos artistas" 
