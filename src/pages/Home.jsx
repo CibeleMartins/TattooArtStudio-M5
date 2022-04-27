@@ -5,6 +5,7 @@ import styles from './Home.module.css';
 import Button from '../components/Button/Button';
 import styles_b from '../components/Button/Button.module.css';
 import logo from '../assets/imagens/loginIcon.png';
+import Button from '../components/Button/Button';
 
 const Home = ({text}) => {
 
@@ -22,23 +23,21 @@ return (
             <img onClick={()=> navigation.push('/Login')} alt='/logo' src={logo}></img>
           </div>
 
-          <div className={styles.text_button}>
-            <div className={styles.elements}>
-              <p className={styles.writes_animation}>Crie uma conta</p>
-            </div>
-
-              <div className={styles.elements}>
-                <Button onClick={()=> navigation.push('/Cadastro')} text="Aqui" className={styles_b.button_h}/>
-              </div>
-              
-          </div>
-
-            <div className={styles.elements}>
-              <Button onClick={()=> navigation.push('/Cadastro')} text="Aqui" className={styles_b.button_h}/>
-            </div>
-
         </div>
 
+        <div className={styles.text_button}>
+          <div className={styles.elements}>
+            <p className={styles.writes_animation}>Crie uma conta</p>
+          </div>
+
+          <div className={styles.elements}>
+            <ButtonDois onClick={()=> navigation.push('/Cadastro')} text="Aqui" className={styles_b.button_h}/>
+          </div>
+              
+        </div>
+
+            
+        
       </div>
 
       <div className={styles.text_two}>
