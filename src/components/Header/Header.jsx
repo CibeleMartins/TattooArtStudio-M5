@@ -5,10 +5,14 @@ import logo from "../../assets/imagens/logo.png";
 
 
 const Header = () => {
+
   return (
+
     <header className={styles.header}>
-    
-      <img src={logo} alt={logo} className={styles.img}/>
+      
+      <div className={styles.logodiv}>
+        <img src={logo} alt={logo} className={styles.img}/>
+      </div>
      
 
       <nav className={styles.nav}>

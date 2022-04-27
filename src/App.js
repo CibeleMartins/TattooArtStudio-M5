@@ -21,6 +21,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+
         {exibir && <Header/>}
 
         <Container customClass= "min-height">
