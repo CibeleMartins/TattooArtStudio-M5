@@ -17,7 +17,6 @@ import './App.css';
 
 function App() {
 
-  
   const location = useLocation()
   const exibir = location.pathname === '/'
 
