@@ -9,6 +9,7 @@ import Cadastro from "./pages/Cadastro"
 import CadastroCliente from './pages/CadastroCliente';
 import Login from './pages/Login';
 import Loader from './pages/layout/Loader'
+import EditarAtendimentos from './pages/EditarAtendimentos'
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -42,6 +43,14 @@ function App() {
 
             <Route exact path="/Atendimentos">
               <Atendimentos />
+            </Route>
+
+            <Route exact path="/EditarAtendimentos/:atendimentoId">
+              <EditarAtendimentos />
+            </Route>
+
+            <Route exact path="/EditarAtendimentos">
+              <EditarAtendimentos />
             </Route>
 
             <Route exact path="/Cadastro">
