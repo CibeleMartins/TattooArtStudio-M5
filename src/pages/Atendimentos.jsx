@@ -51,7 +51,9 @@ const getAtendimento = (id) => {
         <div className={styles.fundo}>
             
           <form onSubmit={handleSubmit(editable? editar : agendar )} className={styles.form}>
-            <h2>Preencha os campos abaixo e solicite um atendimento</h2>
+            
+            <h2>Preencha os campos abaixo e <span>solicite</span> um atendimento</h2>
+
             <div className={styles.divDisplay}>
               <div className={styles.divComponentes}>
                 <label>Informe seu nome:</label>
@@ -65,7 +67,7 @@ const getAtendimento = (id) => {
               </div>
 
               <div className={styles.divComponentes}>
-              <label>Informe seu email:</label>
+                <label>Informe seu email:</label>
                 <input
                   type="email"
                   name="email"
@@ -75,52 +77,73 @@ const getAtendimento = (id) => {
                 />
               </div>
             </div>
-    
-            <input
-              type="text"
-              name="telefone"
-              value={editable? Atendimento.telefone : undefined}
-              {...register("telefone")}
-              placeholder="Insira seu Telefone"
-            />
-    
-            <input
-              type="text"
-              name="cidade"
-              value={editable? Atendimento.cidade : undefined}
-              {...register("cidade")}
-              placeholder="Insira sua Cidade"
-            />
-    
-            <input
-              type="text"
-              name="estado"
-              value={editable? Atendimento.estado : undefined}
-              {...register("estado")}
-              placeholder="Insira seu Estado"
-            />
-            <input
-              type="text"
-              name="data"
-              value={editable? Atendimento.data : undefined}
-              {...register("data")}
-              placeholder="Insira a data que você gostaria"
-            />
-            <input
-              type="text"
-              name="horário"
-              value={editable? Atendimento.horário : undefined}
-              {...register("horário")}
-              placeholder="Insira o horário que você gostaria"
-            />
 
-            <br/>
+            <div className={styles.divDisplay}>
+              <div className={styles.divComponentes}>
+                <label>Informe seu telefone:</label>
+                <input
+                  type="text"
+                  name="telefone"
+                  value={editable? Atendimento.telefone : undefined}
+                  {...register("telefone")}
+                  placeholder="Insira seu Telefone"
+                />
+              </div>
+            </div>
+
+            <div className={styles.divDisplay}>
+              <div className={styles.divComponentes}>
+                <label>Informe sua cidade:</label>
+                <input
+                  type="text"
+                  name="cidade"
+                  value={editable? Atendimento.cidade : undefined}
+                  {...register("cidade")}
+                  placeholder="Insira sua Cidade"
+                />
+              </div>
+              
+              <div className={styles.divComponentes}>
+                <label>Informe seu Estado:</label>
+                <input
+                  type="text"
+                  name="estado"
+                  value={editable? Atendimento.estado : undefined}
+                  {...register("estado")}
+                  placeholder="Insira seu Estado"
+                />
+              </div>
+            </div>
             
-            <button type="submit"> {editable? "Editar" : "Agendar"}</button>
+            <div className={styles.divDisplay}>
+              <div className={styles.divComponentes}>
+                <label>Informe o dia escolhido:</label>
+                <input
+                  type="text"
+                  name="data"
+                  value={editable? Atendimento.data : undefined}
+                  {...register("data")}
+                  placeholder="Insira a data que você gostaria"
+                />
+              </div>
+
+              <div className={styles.divComponentes}>
+                <label>Informe o horário desejado:</label>
+                <input
+                  type="text"
+                  name="horário"
+                  value={editable? Atendimento.horário : undefined}
+                  {...register("horário")}
+                  placeholder="Insira o horário que você gostaria"
+                />
+              </div>
+            </div>
+            
+            <button type="submit" className={styles.botaoAgendar}>{editable? "Editar" : "Agendar"}</button>
           </form>
 
           <Link to="/AcompanharAtendimentos">
-            <ButtonPages/>
+            <ButtonPages className={styles.botaoAcompanhar} text="Acompanhar atendimento"/>
           </Link>
 
         </div>
