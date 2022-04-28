@@ -12,7 +12,16 @@ const CreatEditForm = () => {
     const [Update, setUpdate] = useState(false);
     const {register, handleSubmit} = useForm();
 
-    
+    let editable = false
+    const {atendimentoId } = useParams();
+    const isedit = () => {
+        console.log(atendimentoId)
+         if (atendimentoId === undefined ) { 
+           editable = false
+
+         } else { editable = true 
+            getAtendimento(atendimentoId)}
+    }
     const agendar = (data) => {
    
         api.post(`/atendimentos`, data).then(() => {
@@ -20,13 +29,22 @@ const CreatEditForm = () => {
           
         });
         console.log(data)
-
-        
       }
 
-      const editar = (data) => {
+    const editar = (data) => {
         api.put(`/atendimentos/${data.id}`, data).then(() => {
             setUpdate(true);
 
     });
-}};
+}
+
+const getAtendimento = (id) => { 
+    api.get(`/atendimentosPorId/${id}`).then((response) => {
+        setAtendimento(response.data);
+        console.log('atendimento',response.data)
+      });
+    }
+
+    isedit()
+
+};
