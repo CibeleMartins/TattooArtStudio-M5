@@ -3,5 +3,40 @@
 }
 
 .fundo {
+    /*colocar imagem aqui */
+}
+
+.form {
+    border: 1px solid red;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.divDisplay {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.divComponentes {
+    border: 1px solid orange;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.divComponentes label {
     color: black;
 }
+
+.divComponentes input {
+    width: 70%;
+    margin-left: 15%;
+}
+
