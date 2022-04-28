@@ -10,7 +10,7 @@ function AcompanharAtendimentos() {
     return(
         <div className={styles.fundo}>
             <div className={styles.container}>
-                <h2>Verifique seus atendimentos, <span>faça alterações</span> ou os exclua</h2>
+                <h2>Checagem de <span>atendimento</span></h2>
                 <ShowScheduling userId={id}/>
             </div>
         </div>
