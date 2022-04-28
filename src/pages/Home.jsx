@@ -20,7 +20,7 @@ return (
         <div className={styles.login}>
 
           <div>
-            <img onClick={()=> navigation.push('/Login')} alt='/logo' src={logo}></img>
+            <img onClick={()=> navigation.push('/Login')} alt='/login' src={logo}></img>
           </div>
 
         </div>
