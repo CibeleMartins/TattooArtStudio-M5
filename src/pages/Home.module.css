@@ -103,11 +103,10 @@ h1 {
 }
 
 .text_two h3 {
-  width: 80%;
+  width: 100%;
   font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 70px;
-  margin-left: 30px;
   margin-top: 30px;
   filter: blur(1px) contrast(25);
   
@@ -123,10 +122,12 @@ h3:hover{
   animation: word 2s ease-in-out infinite alternate;
 }
 
+
+
 .writes_animation {
+  
   animation: blinkCursor 400ms infinite normal, typing_p 9s steps(40) 1s infinite normal;
 }
-
 @keyframes blinkCursor {
 
   from {
