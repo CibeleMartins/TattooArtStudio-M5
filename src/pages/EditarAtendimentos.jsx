@@ -48,7 +48,7 @@ const getAtendimento = (id) => {
     isedit()
     return ( 
         <div>
-            <Header/>
+            
    <form onSubmit={handleSubmit(editable? editar : agendar )}>
            <input
              type="text"
@@ -106,7 +106,7 @@ const getAtendimento = (id) => {
    
            <button type="submit"> {editable? "Editar" : "Agendar"}</button>
          </form>
-         <Footer/>
+         
          </div>
    
     )
