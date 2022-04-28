@@ -19,7 +19,7 @@ function Contato() {
                
 
                 <div className={styles.divContato}>
-                    <h2> Envie suas duvida ou sugestões</h2>
+                    <h2>Nos envie <span>suas duvidas</span> ou sugestões</h2>
 
                     <form className={styles.displayForm}>
                         <div>
