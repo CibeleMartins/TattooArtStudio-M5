@@ -19,14 +19,14 @@ import './App.css';
 function App() {
 
   const location = useLocation()
-  const exibir = location.pathname === '/'
-
+  const display = location.pathname === '/' || '/Loader'
+  
   return (
     
       <div className="App">
 
-        {!exibir && <Header/>}
-
+        {!display && <Header/>}
+        
         <Container customClass= "min-height">
           <Switch>
             <Route exact path="/">
@@ -71,7 +71,8 @@ function App() {
           </Switch>
         </Container>
 
-      {!exibir && <Footer/>}
+      {!display && <Footer/>}
+    
       </div>
 
   );
