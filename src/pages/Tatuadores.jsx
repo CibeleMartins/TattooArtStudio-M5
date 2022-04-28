@@ -19,7 +19,10 @@ function Tatuadores() {
                <p>26 anos - São paulo - 4 anos de profissão</p>
                </div>
             </div>
+<<<<<<< HEAD
+=======
 
+>>>>>>> 6c7f87101079d015ede6bb4c947f8ef2bf0c95c0
         <div className={styles.bnt}>
             <button>
                 <a href="./Contato.jsx">
