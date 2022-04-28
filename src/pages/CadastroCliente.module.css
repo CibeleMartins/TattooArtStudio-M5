@@ -5,6 +5,7 @@
 .background {
     background-image: url("../assets/imagens/shop.png");
     background-size: cover;
+    padding: 5%;
 }
 
 .divCadastro {

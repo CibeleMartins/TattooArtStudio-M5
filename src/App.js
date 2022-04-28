@@ -19,7 +19,7 @@ import './App.css';
 function App() {
 
   const location = useLocation()
-  const display = location.pathname === '/' || '/Loader'
+  const display = location.pathname === '/'
   
   const [Loading, setLoading] = useState(true)
 
@@ -79,9 +79,6 @@ function App() {
               <Login />
             </Route>
 
-            <Route exact path="/Loader">
-              <Loader/>
-            </Route>
           </Switch>
         </Container>
 

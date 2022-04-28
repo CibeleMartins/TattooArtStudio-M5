@@ -15,7 +15,7 @@ function Contato() {
 
     return(
         <> 
-            <div className={styles.Fundo}>
+            <div className={styles.fundo}>
                
 
                 <div className={styles.divContato}>
