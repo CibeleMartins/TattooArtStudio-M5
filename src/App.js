@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Switch, Route, useLocation } from "react-router-dom";
 
 import Home from "./pages/Home"
@@ -21,9 +21,23 @@ function App() {
   const location = useLocation()
   const display = location.pathname === '/' || '/Loader'
   
-  return (
-    
+  const [Loading, setLoading] = useState(true)
+
+  useEffect(()=> {
+
+    setTimeout(()=> {
+
+      setLoading(false);
+
+    }, 3000)
+
+  }, []);
+
+
+  return Loading ? <Loader/> : 
+
       <div className="App">
+
 
         {!display && <Header/>}
         
@@ -75,7 +89,7 @@ function App() {
     
       </div>
 
-  );
+  ;
 }
 
 export default App;

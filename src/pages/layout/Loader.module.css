@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  transform: scale3d(5);
+  transform: scale(5);
   background-color: white;
 
 }
@@ -21,6 +21,7 @@
   border: 6px solid black;
   border-radius: 50%;
   border-top-color: red;
+  animation: rotating 1s infinite
 }
 
 @keyframes rotating {
