@@ -68,7 +68,7 @@ const getAtendimento = (id) => {
             
           <form onSubmit={handleSubmit(editable? editar : agendar )} className={styles.form}>
             
-            <h2>Preencha os campos abaixo e <span>solicite</span> um atendimento</h2>
+            <h2>Preencha os campos abaixo e <span>agende</span> ou <span>altere</span> um atendimento</h2>
 
             <div className={styles.divDisplay}>
               <div className={styles.divComponentes}>
