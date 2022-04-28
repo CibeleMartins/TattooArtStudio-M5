@@ -5,7 +5,11 @@ function Loader () {
 
   return (
 
-    <div className={styles.loader}></div>
+    <main className={styles.body}>
+
+      <div className={styles.loader}></div>
+
+    </main>
 
   )
 

@@ -19,6 +19,7 @@ function CadastroCliente() {
     }
 
     return(
+        
         <div className={styles.background}>
           
 

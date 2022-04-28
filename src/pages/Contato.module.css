@@ -2,16 +2,17 @@
     font-family: "Open Sans", sans-serif;
 }
 
-.Fundo{
+.fundo{
     background-image: url("../assets/imagens/contato.jpg");
     background-size: cover;
     width: 100%;
     height: 100%;
+    padding: 5%;
 }
 
 .divContato{
     width: 70%;
-    margin-left: 15%;
+    margin-left: 8%;
     border-radius: 10px;
     padding: 2%;
     background-color: rgba(12, 11, 11, 0.952);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Switch, Route, useLocation } from "react-router-dom";
 
 import Home from "./pages/Home"
@@ -19,14 +19,28 @@ import './App.css';
 function App() {
 
   const location = useLocation()
-  const exibir = location.pathname === '/'
+  const display = location.pathname === '/'
+  
+  const [Loading, setLoading] = useState(true)
 
-  return (
-    
+  useEffect(()=> {
+
+    setTimeout(()=> {
+
+      setLoading(false);
+
+    }, 3000)
+
+  }, []);
+
+
+  return Loading ? <Loader/> : 
+
       <div className="App">
 
-        {!exibir && <Header/>}
 
+        {!display && <Header/>}
+        
         <Container customClass= "min-height">
           <Switch>
             <Route exact path="/">
@@ -65,16 +79,14 @@ function App() {
               <Login />
             </Route>
 
-            <Route exact path="/Loader">
-              <Loader/>
-            </Route>
           </Switch>
         </Container>
 
-      {!exibir && <Footer/>}
+      {!display && <Footer/>}
+    
       </div>
 
-  );
+  ;
 }
 
 export default App;

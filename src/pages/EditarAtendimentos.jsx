@@ -3,8 +3,7 @@ import { useForm } from "react-hook-form";
 import React, { useState } from "react";
 import api from "../services/api"
 import styles from "./Atendimentos.module.css"
-import Header from "../components/Header/Header"
-import Footer from "../components/Footer/Footer"
+
 
 
 const CreatEditForm = () => { 

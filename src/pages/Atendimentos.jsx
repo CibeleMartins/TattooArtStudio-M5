@@ -1,7 +1,5 @@
 import { useParams } from "react-router-dom"
 import styles from "./Atendimentos.module.css"
-import Header from "../components/Header/Header"
-import Footer from "../components/Footer/Footer"
 import ShowScheduling from "./scheduling/ShowScheduling.jsx"
 
 
