@@ -47,6 +47,22 @@ const getAtendimento = (id) => {
     }
 
     isedit()
+
+    function checaInput() {
+
+      let nome= document.getElementById("nome")
+      let email= document.getElementById("email")
+      let telefone= document.getElementById("telefone")
+      let cidade= document.getElementById("cidade")
+      let estado= document.getElementById("estado")
+      let data= document.getElementById("data")
+      let horario= document.getElementById("horario")
+
+      if(nome.value !== "" && email.value !== ""  && telefone.value !== "" && cidade.value !== "" && estado.value !== "" && data.value !== "" && horario.value !== "") {
+          alert("Agendamento realizado com sucesso!")
+      }
+    }
+
     return ( 
         <div className={styles.fundo}>
             
@@ -63,6 +79,8 @@ const getAtendimento = (id) => {
                   value={editable? Atendimento.nome : undefined}
                   {...register("nome")}
                   placeholder="Insira seu nome"
+                  required
+                  id="nome"
                 />
               </div>
 
@@ -74,6 +92,8 @@ const getAtendimento = (id) => {
                   value={editable? Atendimento.email : undefined}
                   {...register("email")}
                   placeholder="Insira seu email"
+                  required
+                  id="email"
                 />
               </div>
             </div>
@@ -87,6 +107,8 @@ const getAtendimento = (id) => {
                   value={editable? Atendimento.telefone : undefined}
                   {...register("telefone")}
                   placeholder="Insira seu Telefone"
+                  required
+                  id="telefone"
                 />
               </div>
             </div>
@@ -100,6 +122,8 @@ const getAtendimento = (id) => {
                   value={editable? Atendimento.cidade : undefined}
                   {...register("cidade")}
                   placeholder="Insira sua Cidade"
+                  required
+                  id="cidade"
                 />
               </div>
               
@@ -111,6 +135,8 @@ const getAtendimento = (id) => {
                   value={editable? Atendimento.estado : undefined}
                   {...register("estado")}
                   placeholder="Insira seu Estado"
+                  required
+                  id="estado"
                 />
               </div>
             </div>
@@ -124,6 +150,8 @@ const getAtendimento = (id) => {
                   value={editable? Atendimento.data : undefined}
                   {...register("data")}
                   placeholder="Insira a data que você gostaria"
+                  required
+                  id="data"
                 />
               </div>
 
@@ -135,11 +163,13 @@ const getAtendimento = (id) => {
                   value={editable? Atendimento.horário : undefined}
                   {...register("horário")}
                   placeholder="Insira o horário que você gostaria"
+                  required
+                  id="horario"
                 />
               </div>
             </div>
             
-            <button type="submit" className={styles.botaoAgendar}>{editable? "Editar" : "Agendar"}</button>
+            <button type="submit" className={styles.botaoAgendar} onClick={checaInput}>{editable? "Editar" : "Agendar"}</button>
           </form>
 
           <Link to="/AcompanharAtendimentos">
