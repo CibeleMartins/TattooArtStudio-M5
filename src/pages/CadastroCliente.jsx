@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom"
 
-import Header from "../components/Header/Header"
-import Footer from "../components/Footer/Footer"
-
 import styles from "./CadastroCliente.module.css"
 import ButtonPages from "../components/Button/ButtonPages"
 
@@ -23,7 +20,7 @@ function CadastroCliente() {
 
     return(
         <div className={styles.background}>
-            <Header/>
+          
 
             <div className={styles.divCadastro}>
                 <h2>Preencha o formulário abaixo e aproveite <span>benefícios exclusivos</span></h2>
@@ -62,7 +59,7 @@ function CadastroCliente() {
                 </div>
             </Link>
 
-            <Footer/>
+           
         </div>
     )
 }

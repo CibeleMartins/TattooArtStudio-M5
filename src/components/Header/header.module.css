@@ -7,23 +7,30 @@
 
 .header {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   height: 100%;
   background-color: #000000;
   width: 100%;
-  margin-bottom: 5%;
 }
 
 .img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     margin: 10px 10px 10px 10px;
 }
 
+.logodiv {
+
+  width: 20%;
+  height: auto;
+
+}
+
 .nav { 
-    margin-bottom: 70px;
-    margin-left: 250px;
-    width: 100%;
+
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .link {

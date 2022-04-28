@@ -5,11 +5,15 @@ import logo from "../../assets/imagens/logo.png";
 
 
 const Header = () => {
+
   return (
+
     <header className={styles.header}>
-      <Link to="/" className={styles.link}>
+      
+      <div className={styles.logodiv}>
         <img src={logo} alt={logo} className={styles.img}/>
-      </Link>
+      </div>
+     
 
       <nav className={styles.nav}>
         <Link to="/" className={styles.link}>Home</Link>
