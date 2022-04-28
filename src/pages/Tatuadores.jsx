@@ -9,7 +9,7 @@ function Tatuadores() {
                 <h1>Tatuadores</h1>
             </div>
             <div>
-                <img src=""></img>
+                <img src="" alt=''></img>
             </div>
  
         </main>

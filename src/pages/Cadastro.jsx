@@ -1,10 +1,11 @@
 import React from 'react';
-import {useHistory} from "react-router-dom"
-
-import styles from "./Cadastro.module.css"
+import {useHistory} from "react-router-dom";
 import { FaUser } from 'react-icons/fa';
-import banner from "../assets/imagens/banner.jpeg"
-import loginIcon from "../assets/imagens/loginIcon.png"
+
+import styles from "./Cadastro.module.css";
+import banner from "../assets/imagens/banner.jpeg";
+import loginIcon from "../assets/imagens/loginIcon.png";
+import arrowReturn from '../assets/imagens/arrowReturn.png';
 
 
 function Cadastro() {
@@ -16,7 +17,8 @@ function Cadastro() {
 
         <section className={styles.section}>
 
-            <div className={styles.divUsers}>
+            <div className={styles.divtextClient}>
+
                 <div className={styles.divTexto}>
                     <h1>
                         Cadastre-se aqui!
@@ -29,6 +31,10 @@ function Cadastro() {
                         <h3>Para clientes</h3>
                     </div>
                 </div>
+                
+                <div className={styles.arrow}>
+                    <img onClick={()=> navigation.push('/')} src={arrowReturn} alt='arrowReturn' width={35}/>
+                </div>
 
             </div>
 
@@ -36,7 +42,7 @@ function Cadastro() {
 
                 <div className={styles.loginIcon}>
                     
-                    <img onClick={()=> navigation.push('/Login')} src={loginIcon} alt=""/>
+                    <img onClick={()=> navigation.push('/Login')} src={loginIcon} alt="" width={30}/>
                     
                 </div>
 
