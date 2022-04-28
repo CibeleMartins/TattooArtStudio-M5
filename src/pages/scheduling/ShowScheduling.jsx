@@ -22,7 +22,7 @@ const ShowScheduling = () => {
  
   const EditarCard = (id) => {
     console.log('editar')
-    history.push(`/EditarAtendimentos/${id}`)
+    history.push(`/Atendimentos/${id}`)
 
  
   }

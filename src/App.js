@@ -4,12 +4,12 @@ import { Switch, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home"
 import Contato from "./pages/Contato";
 import Tatuadores from "./pages/Tatuadores";
-import Atendimentos from "./pages/Atendimentos"
+import AcompanharAtendimentos from "./pages/AcompanharAtendimentos"
 import Cadastro from "./pages/Cadastro"
 import CadastroCliente from './pages/CadastroCliente';
 import Login from './pages/Login';
 import Loader from './pages/layout/Loader'
-import EditarAtendimentos from './pages/EditarAtendimentos'
+import Atendimentos from './pages/Atendimentos'
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -55,16 +55,16 @@ function App() {
               <Tatuadores />
             </Route>
 
-            <Route exact path="/Atendimentos">
+            <Route exact path="/AcompanharAtendimentos">
+              <AcompanharAtendimentos />
+            </Route>
+
+            <Route exact path="/Atendimentos/:atendimentoId">
               <Atendimentos />
             </Route>
 
-            <Route exact path="/EditarAtendimentos/:atendimentoId">
-              <EditarAtendimentos />
-            </Route>
-
-            <Route exact path="/EditarAtendimentos">
-              <EditarAtendimentos />
+            <Route exact path="/Atendimentos">
+              <Atendimentos />
             </Route>
 
             <Route exact path="/Cadastro">

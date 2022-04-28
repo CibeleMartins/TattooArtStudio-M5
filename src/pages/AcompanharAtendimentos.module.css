@@ -1,0 +1,30 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+.fundo {
+    background-image: url("../assets/imagens/acompanhar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h2 {
+    width: 80%;
+    padding: 2%;
+    color: white;
+    text-shadow: 1.5px 1.5px rgb(99, 10, 10);
+    font-size: 2.2em;
+    margin-left: 8%;
+}
+
+.container h2 span {
+    color: rgb(99, 10, 10);
+    text-shadow: 1.1px 1.1px white;
+}
