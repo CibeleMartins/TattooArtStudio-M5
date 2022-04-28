@@ -3,7 +3,7 @@ import styles from "./Tatuadores.module.css"
 function Tatuadores() {
     return(
 
-        <main>  
+    <main>  
             
         <div className={styles.tituloIn}>
                <h1>Nossos artistas</h1>
@@ -77,9 +77,9 @@ function Tatuadores() {
                     conquistados individualmente por cada tatuador que forma 
                     a nossa equipe, também ficamos muito satisfeitos pelo reconhecimento
                     de nossos clientes e felizes com a dedicação que temos em 
-                    eternizar em suas peles os sonhos e emoções unicamente incríveis.</p>
+                    eternizar em suas peles os sonhos e emoções unicamente incríveis...</p>
         </div>
-        </main>
+    </main>
 
         
     )
