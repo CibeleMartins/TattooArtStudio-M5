@@ -14,7 +14,6 @@ import Atendimentos from './pages/Atendimentos'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Container from './pages/layout/Container/Container.jsx';
-import stylesC from './pages/layout/Container/Container.module.css'
 import './App.css';
 
 function App() {
