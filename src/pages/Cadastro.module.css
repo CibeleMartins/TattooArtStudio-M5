@@ -80,6 +80,18 @@
     cursor: pointer;
 }
 
+.sizeImg {
+
+    width: 4%;
+
+}
+
+.sizeImgLogin {
+
+    width: 6%;
+
+}
+
 .imageAndForm {
     display: flex;
     flex-direction: column;
