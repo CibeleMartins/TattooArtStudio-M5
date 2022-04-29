@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Open Sans", sans-serif;
 }
 
 .background {
@@ -19,7 +20,7 @@
     width: 70%;
     border-radius: 10px;
     background-color: rgba(12, 11, 11, 0.952);
-   margin-right: 10%;
+    margin-right: 10%;
 }
 
 .divLogin h2 {

@@ -45,8 +45,6 @@ function Login() {
                     <ButtonPages text="Retornar"/>
                 </div>
             </Link>
-
-            
         </div>
     )
 }

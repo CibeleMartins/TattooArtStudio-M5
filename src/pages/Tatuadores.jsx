@@ -1,81 +1,234 @@
-import styles from "./Tatuadores.module.css"
+import { useHistory } from 'react-router-dom';
+
+import Button from '../components/Button/Button';
+import styles_b from '../components/Button/Button.module.css';
+
+import styles from './Tatuadores.module.css';
+import artist from "../assets/imagens/artist.png";
+import artist1 from "../assets/imagens/artist1.png";
+import artist2 from "../assets/imagens/artist2.png";
+import artist3 from "../assets/imagens/artist3.png";
+import artist4 from "../assets/imagens/artist4.png";
 
 function Tatuadores() {
-    return(
 
+<<<<<<< HEAD
     <main>  
+=======
+    const navigation= useHistory()
+
+    return (
+
+    <div className={styles.container}>  
+        
+        {/* first division */}
+        <div className={styles.firstDivision}>
+
+            <div className={styles.cards}>
+                
+                
+                    <img className={styles.imgArtists} src={artist}  alt='artist'/>
+                
+
+                <div className={styles.divInfos}>
+                    <h4>Carlos Eduardo</h4>
+                    <br></br>
+                    <p>25 anos</p>
+                    <br></br>
+                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <br></br>
+                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+                </div>
+                
+                <div className={styles.buttonBox}>
+                <Button onClick={()=> navigation.push('/Atendimentos')} className={styles_b.button_h} text='Agendar'/>
+                </div>
+
+            </div>
+
+
+            <div className={styles.cards}>
+
+                <img className={styles.imgArtists} src={artist1} alt='artist'/>
+
+                <div className={styles.divInfos}>
+                    <h4>Carlos Eduardo</h4>
+                    <br></br>
+                    <p>25 anos</p>
+                    <br></br>
+                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <br></br>
+                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+                </div>
+
+                <div className={styles.buttonBox}>
+                <Button onClick={()=> navigation.push('/Atendimentos')} className={styles_b.button_h} text='Agendar'/>
+                </div>
+>>>>>>> main
             
-        <div className={styles.tituloIn}>
-               <h1>Nossos artistas</h1>
+
+            </div>
+
+            <div className={styles.cards}>
+
+                <img className={styles.imgArtists} src={artist2} alt='artist'/>
+
+                <div className={styles.divInfos}>
+                    <h4>Carlos Eduardo</h4>
+                    <br></br>
+                    <p>25 anos</p>
+                    <br></br>
+                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <br></br>
+                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+                </div>
+
+                <div className={styles.buttonBox}>
+                <Button onClick={()=> navigation.push('/Atendimentos')} className={styles_b.button_h} text='Agendar'/>
+                </div>
+            </div>
+
+        </div>
+
+        {/* second division */}
+
+        <div className={styles.secondDivision}>
+
+            <div className={styles.cards}>
+
+                <img className={styles.imgArtists} src={artist4} alt='artist'/>
+
+                <div className={styles.divInfos}>
+                    <h4>Carlos Eduardo</h4>
+                    <br></br>
+                    <p>25 anos</p>
+                    <br></br>
+                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <br></br>
+                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+                </div>
+
+                <div className={styles.buttonBox}>
+                <Button onClick={()=> navigation.push('/Atendimentos')} className={styles_b.button_h} text='Agendar'/>
+                </div>
+
+            </div>
+
+            <div className={styles.cards}>
+
+                <img className={styles.imgArtists} src={artist3} alt='artist'></img>
+
+                <div className={styles.divInfos}>
+                    <h4>Carlos Eduardo</h4>
+                    <br></br>
+                    <p>25 anos</p>
+                    <br></br>
+                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <br></br>
+                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+                </div>
+
+                <div className={styles.buttonBox}>
+                <Button onClick={()=> navigation.push('/Atendimentos')} className={styles_b.button_h} text='Agendar'/>
+                </div>
+
+            </div>
+
+            <div className={styles.cards}>
+
+                <img className={styles.imgArtists} src={artist2} alt='artist'></img>
+
+                <div className={styles.divInfos}>
+                    <h4>Carlos Eduardo</h4>
+                    <br></br>
+                    <p>25 anos</p>
+                    <br></br>
+                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <br></br>
+                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+                </div>
+
+                <div className={styles.buttonBox}>
+                <Button onClick={()=> navigation.push('/Atendimentos')} className={styles_b.button_h} text='Agendar'/>
+                </div>
+
+            </div>
+
+        </div>
+
+        {/* third division */}
+
+        <div className={styles.thirdDivision}>
+
+            <div className={styles.cards}>
+
+                <img className={styles.imgArtists} src={artist2} alt='artist'/>
+
+                <div className={styles.divInfos}>
+                    <h4>Carlos Eduardo</h4>
+                    <br></br>
+                    <p>25 anos</p>
+                    <br></br>
+                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <br></br>
+                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+                </div>
+
+                <div className={styles.buttonBox}>
+                <Button onClick={()=> navigation.push('/Atendimentos')} className={styles_b.button_h} text='Agendar'/>
+                </div>
+            </div>
+
+            <div className={styles.cards}>
+
+                <img className={styles.imgArtists} src={artist2} alt='artist'/>
+
+                <div className={styles.divInfos}>
+
+                    <h4>Carlos Eduardo</h4>
+                    <br></br>
+                    <p>25 anos</p>
+                    <br></br>
+                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <br></br>
+                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+
+                </div>
+
+                <div className={styles.buttonBox}>
+                <Button onClick={()=> navigation.push('/Atendimentos')} className={styles_b.button_h} text='Agendar'/>
+                </div>
+
+            </div>
+
+            <div className={styles.cards}>
+
+                <img className={styles.imgArtists} src={artist2} alt='artist'/>
+
+                <div className={styles.divInfos}>
+
+                    <h4>Carlos Eduardo</h4>
+                    <br></br>
+                    <p>25 anos</p>
+                    <br></br>
+                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <br></br>
+                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+
+                </div>
+
+
+                <div className={styles.buttonBox}>
+                <Button onClick={()=> navigation.push('/Atendimentos')} className={styles_b.button_h} text='Agendar'/>
+                </div>
+
+            </div>
+
         </div>
         
-    <div className={styles.cards}>
-        <div className={styles.container}>
-            <div className={styles.imagem}> 
-                <img src="https://pbs.twimg.com/profile_images/669117153531023360/cSn3fUps_400x400.jpg" alt="tatuador"></img>
-            <div className={styles.titulo}>
-               <h3>Paulo André</h3>
-               <div className={styles.body }>
-               <p>26 anos - São paulo - 4 anos de profissão</p>
-               </div>
-            </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 6c7f87101079d015ede6bb4c947f8ef2bf0c95c0
-        <div className={styles.bnt}>
-            <button>
-                <a href="./Contato.jsx">
-                    Contato
-                </a>
-            </button>
-        </div>
-        </div>
-        </div>
-
-        <div className={styles.container}>
-            <div className={styles.imagem}> 
-                <img src="https://s2.glbimg.com/WsZV2FK-x9zri5s8bZK6zZSYnzw=/512x320/smart/e.glbimg.com/og/ed/f/original/2020/12/09/didi_tatto4493.jpg" alt="tatuadora"></img>
-            <div className={styles.titulo}>
-               <h3>Felipe Oliveira</h3>
-               <div className={styles.body }>
-               <p>29 anos - Rio de Janeiro - 7 anos de profissão</p>
-               </div>
-            </div>
-        <div className={styles.bnt}>
-            <button>
-                <a href="./Contato.jsx">
-                    Contato
-                </a>
-            </button>
-        </div>
-        </div>
-        </div>
-
-        <div className={styles.container}>
-            <div className={styles.imagem}> 
-                <img src="https://cdn.domestika.org/c_fill,dpr_auto,f_auto,h_256,pg_1,t_base_params,w_256/v1561908433/avatars/001/318/042/1318042-original.jpg?1561908433" alt="tatuador"></img>
-            <div className={styles.titulo}>
-               <h3>Kiko Pontes</h3>
-               <div className={styles.body }>
-               <p>34 anos - são paulo - 15 anos de profissão</p>
-               </div>
-
-            <div>
-                <img src="" alt=''></img>
-
-            </div>
-        <div className={styles.bnt}>
-            <button>
-                <a href="./Contato.jsx">
-                    Contato
-                </a>
-            </button>
-        </div>
-        </div>
-        </div>
     </div>
 
+<<<<<<< HEAD
         <div className={styles.tituloFim}>
                <h1>Quem somos</h1>
                <p>  Fundado em 1997, o Tattoo Art Studio atualmente é considerado um
@@ -89,8 +242,10 @@ function Tatuadores() {
         </div>
     </main>
 
+=======
+>>>>>>> main
         
     )
 }
 
-export default Tatuadores
+export default Tatuadores;
