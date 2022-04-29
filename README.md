@@ -62,9 +62,13 @@ Cada integrante do grupo ficou responsável pela criação de uma ou mais partes
 
 
 
-# Tecnologias utilizadas: 
+## Tecnologias utilizadas: 
+
 <p align="center">
 <a href="https://nodejs.org/en/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" width="40" /></a> <a href="https://expressjs.com/pt-br/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" height="40" width="40" /></a> <a href="https://insomnia.rest/download"><img src="./public/assets/insomniaIcon.png" height="40" width="40" /></a> <a href="https://sequelize.org"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" height="40" width="40" /></a> <a href="https://www.sqlite.org/index.html"><img src="./public/assets/sqlite3Icon.png" height="40" width="80" /></a>
 </p>
 
+## Observações
+
+Este projeto está sujeito à novas implementações. Sinta-se a vontade para explorar todo seu conhecimento utilizando nosso projeto, qualquer dúvida nos procure no Linkedin e nos contate!
 ---
