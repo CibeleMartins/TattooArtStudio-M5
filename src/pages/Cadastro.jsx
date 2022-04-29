@@ -33,7 +33,7 @@ function Cadastro() {
                 </div>
                 
                 <div className={styles.arrow}>
-                    <img onClick={()=> navigation.push('/')} src={arrowReturn} alt='arrowReturn' width={35}/>
+                    <img onClick={()=> navigation.push('/')} src={arrowReturn} alt='arrowReturn' className={styles.sizeImg}/>
                 </div>
 
             </div>
@@ -42,7 +42,7 @@ function Cadastro() {
 
                 <div className={styles.loginIcon}>
                     
-                    <img onClick={()=> navigation.push('/Login')} src={loginIcon} alt="" width={30}/>
+                    <img onClick={()=> navigation.push('/Login')} src={loginIcon} alt="" className={styles.sizeImgLogin}/>
                     
                 </div>
 
