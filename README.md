@@ -1,10 +1,8 @@
 # Bem vindo ao Studio Tattoo Art
 
-Este projeto foi iniciado com [Create React App](https://github.com/facebook/create-react-app).
-
 <br />
 <p align="center">
-    <img src="./public/assets/logoStudio.jpg" alt="Logo" width="300">
+    <img src="./src/assets/imagens/flag.jpg" alt="Logo" width="300">
 
   <h3 align="center">Studio Tattoo API com Node, Express, Sequelize e SQLite</h3>
  <br />
@@ -18,10 +16,12 @@ Este projeto foi iniciado com [Create React App](https://github.com/facebook/cre
        <br />
     <br />
     <h1 align="center">
-    <img src="./public/assets/logoGit.png" alt="Logo" width="250">
+    <img src="./src/assets/imagens/gitHub.png" alt="Logo" width="250">
  </h1>
   </p>
 </p>
+
+Este projeto foi iniciado com [Create React App](https://github.com/facebook/create-react-app).
 
 
 ## Sobre
@@ -61,14 +61,7 @@ Cada integrante do grupo ficou responsável pela criação de uma ou mais partes
 - [Karolaine Felix](https://github.com/kaarolfelix)
 
 
-
-## Tecnologias utilizadas: 
-
-<p align="center">
-<a href="https://nodejs.org/en/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" width="40" /></a> <a href="https://expressjs.com/pt-br/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" height="40" width="40" /></a> <a href="https://insomnia.rest/download"><img src="./public/assets/insomniaIcon.png" height="40" width="40" /></a> <a href="https://sequelize.org"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" height="40" width="40" /></a> <a href="https://www.sqlite.org/index.html"><img src="./public/assets/sqlite3Icon.png" height="40" width="80" /></a>
-</p>
-
 ## Observações
 
 Este projeto está sujeito à novas implementações. Sinta-se a vontade para explorar todo seu conhecimento utilizando nosso projeto, qualquer dúvida nos procure no Linkedin e nos contate!
----
+
