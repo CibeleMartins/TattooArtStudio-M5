@@ -47,6 +47,7 @@
 .machineImg {
   width: 100px;
   height: auto;
+  margin-top: 10%;
   animation: machine 1s infinite;
 }
 
@@ -68,7 +69,7 @@
   }
 
   to {
-    width: 150px;
+    width: 170px;
     border-top: grey;
   }
 

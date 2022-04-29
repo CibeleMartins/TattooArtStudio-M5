@@ -39,9 +39,11 @@ main {
   margin-top: 20px;
   cursor: pointer;
 
+
 }
 
-img {
+.img {
+  width: 40%;
   margin-right: 40px;
 }
 
