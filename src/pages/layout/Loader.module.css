@@ -47,7 +47,6 @@
 .machineImg {
   width: 100px;
   height: auto;
-  margin-top: 10%;
   animation: machine 1s infinite;
 }
 
