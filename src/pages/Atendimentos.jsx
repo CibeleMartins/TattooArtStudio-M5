@@ -1,182 +1,170 @@
 import { useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import React, { useState } from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
-import api from "../services/api"
-import styles from "./Atendimentos.module.css"
-import ButtonPages from "../components/Button/ButtonPages"
+import api from "../services/api";
+import styles from "./Atendimentos.module.css";
+import ButtonPages from "../components/Button/ButtonPages";
+import { useEffect } from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
-const CreatEditForm = () => { 
-    const [Atendimento, setAtendimento] = useState([]);
-    const [Update, setUpdate] = useState(false);
-    const {register, handleSubmit} = useForm();
+const CreatEditForm = () => {
+  const [Atendimento, setAtendimento] = useState([]);
+  const { register, setValue, handleSubmit } = useForm();
+  const [editable, setEditable] = useState(false);
+  const history = useHistory()
 
-    let editable = false
-    const {atendimentoId } = useParams();
-    const isedit = () => {
-        console.log(atendimentoId)
-         if (atendimentoId === undefined ) { 
-           editable = false
+  const { atendimentoId } = useParams();
 
-         } else { editable = true 
-            getAtendimento(atendimentoId)}
+  const isedit = () => {
+    console.log(atendimentoId);
+    if (atendimentoId === undefined) {
+      setEditable(false);
+    } else {
+      setEditable(true);
+      getAtendimento(atendimentoId);
     }
-    const agendar = (data) => {
-   
-        api.post(`/atendimentos`, data).then(() => {
-          setUpdate(true);
-          
-        });
-        console.log(data)
-      }
-
-    const editar = (data) => {
-        api.put(`/atendimentos/${data.id}`, data).then(() => {
-            setUpdate(true);
-
+  };
+  const agendar = (data) => {
+    api.post(`/Atendimentos`, data).then((response) => {
+      alert("Agendamento criado com sucesso!");
+      history.push('/AcompanharAtendimentos')
     });
-}
+    console.log(data);
+  };
 
-const getAtendimento = (id) => { 
+  const editar = (data) => {
+    api.put(`/atendimentos/${atendimentoId}`, data).then(() => {
+      alert("Agendamento editado com sucesso!");
+    });
+  };
+
+  const getAtendimento = (id) => {
     api.get(`/atendimentosPorId/${id}`).then((response) => {
-        setAtendimento(response.data);
-        console.log('atendimento',response.data)
-      });
+      setAtendimento(response.data);
+      console.log("atendimento", response.data);
+      const { data } = response;
+      setValue("nome", data.nome);
+      setValue("email", data.email);
+      setValue("telefone", data.telefone);
+      setValue("cidade", data.cidade);
+      setValue("estado", data.estado);
+      setValue("data", data.data);
+      setValue("horário", data.horário);
+    });
+  };
+
+  useEffect(() => {
+
+    if(atendimentoId !== undefined) {
+      isedit();
     }
 
-    isedit()
+  }, [atendimentoId]);
 
-    function checaInput() {
+  return (
+    <div className={styles.fundo}>
+      <form
+        onSubmit={handleSubmit(editable ? editar : agendar)}
+        className={styles.form}
+      >
+        <h2>
+          Preencha os campos abaixo e <span>agende</span> ou <span>altere</span>{" "}
+          um atendimento
+        </h2>
 
-      let nome= document.getElementById("nome")
-      let email= document.getElementById("email")
-      let telefone= document.getElementById("telefone")
-      let cidade= document.getElementById("cidade")
-      let estado= document.getElementById("estado")
-      let data= document.getElementById("data")
-      let horario= document.getElementById("horario")
+        <div className={styles.divDisplay}>
+          <div className={styles.divComponentes}>
+            <label>Informe seu nome:</label>
+            <input
+              type="text"
+              {...register("nome")}
+              placeholder="Insira seu nome"
+              required
+            />
+          </div>
 
-      if(nome.value !== "" && email.value !== ""  && telefone.value !== "" && cidade.value !== "" && estado.value !== "" && data.value !== "" && horario.value !== "") {
-          alert("Agendamento realizado com sucesso!")
-      }
-    }
-
-    return ( 
-        <div className={styles.fundo}>
-            
-          <form onSubmit={handleSubmit(editable? editar : agendar )} className={styles.form}>
-            
-            <h2>Preencha os campos abaixo e <span>agende</span> ou <span>altere</span> um atendimento</h2>
-
-            <div className={styles.divDisplay}>
-              <div className={styles.divComponentes}>
-                <label>Informe seu nome:</label>
-                <input
-                  type="text"
-                  name="nome"
-                  value={editable? Atendimento.nome : undefined}
-                  {...register("nome")}
-                  placeholder="Insira seu nome"
-                  required
-                  id="nome"
-                />
-              </div>
-
-              <div className={styles.divComponentes}>
-                <label>Informe seu email:</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={editable? Atendimento.email : undefined}
-                  {...register("email")}
-                  placeholder="Insira seu email"
-                  required
-                  id="email"
-                />
-              </div>
-            </div>
-
-            <div className={styles.divDisplay}>
-              <div className={styles.divComponentes}>
-                <label>Informe seu telefone:</label>
-                <input
-                  type="text"
-                  name="telefone"
-                  value={editable? Atendimento.telefone : undefined}
-                  {...register("telefone")}
-                  placeholder="Insira seu Telefone"
-                  required
-                  id="telefone"
-                />
-              </div>
-            </div>
-
-            <div className={styles.divDisplay}>
-              <div className={styles.divComponentes}>
-                <label>Informe sua cidade:</label>
-                <input
-                  type="text"
-                  name="cidade"
-                  value={editable? Atendimento.cidade : undefined}
-                  {...register("cidade")}
-                  placeholder="Insira sua Cidade"
-                  required
-                  id="cidade"
-                />
-              </div>
-              
-              <div className={styles.divComponentes}>
-                <label>Informe seu Estado:</label>
-                <input
-                  type="text"
-                  name="estado"
-                  value={editable? Atendimento.estado : undefined}
-                  {...register("estado")}
-                  placeholder="Insira seu Estado"
-                  required
-                  id="estado"
-                />
-              </div>
-            </div>
-            
-            <div className={styles.divDisplay}>
-              <div className={styles.divComponentes}>
-                <label>Informe o dia escolhido:</label>
-                <input
-                  type="text"
-                  name="data"
-                  value={editable? Atendimento.data : undefined}
-                  {...register("data")}
-                  placeholder="Insira a data que você gostaria"
-                  required
-                  id="data"
-                />
-              </div>
-
-              <div className={styles.divComponentes}>
-                <label>Informe o horário desejado:</label>
-                <input
-                  type="text"
-                  name="horário"
-                  value={editable? Atendimento.horário : undefined}
-                  {...register("horário")}
-                  placeholder="Insira o horário que você gostaria"
-                  required
-                  id="horario"
-                />
-              </div>
-            </div>
-            
-            <button type="submit" className={styles.botaoAgendar} onClick={checaInput}>{editable? "Editar" : "Agendar"}</button>
-          </form>
-
-          <Link to="/AcompanharAtendimentos">
-            <ButtonPages className={styles.botaoAcompanhar} text="Acompanhar atendimento"/>
-          </Link>
-
+          <div className={styles.divComponentes}>
+            <label>Informe seu email:</label>
+            <input
+              type="email"
+              {...register("email")}
+              placeholder="Insira seu email"
+              required
+            />
+          </div>
         </div>
-    )
+
+        <div className={styles.divDisplay}>
+          <div className={styles.divComponentes}>
+            <label>Informe seu telefone:</label>
+            <input
+              type="text"
+              {...register("telefone")}
+              placeholder="Insira seu Telefone"
+              required
+            />
+          </div>
+        </div>
+
+        <div className={styles.divDisplay}>
+          <div className={styles.divComponentes}>
+            <label>Informe sua cidade:</label>
+            <input
+              type="text"
+              {...register("cidade")}
+              placeholder="Insira sua Cidade"
+              required
+            />
+          </div>
+
+          <div className={styles.divComponentes}>
+            <label>Informe seu Estado:</label>
+            <input
+              type="text"
+              {...register("estado")}
+              placeholder="Insira seu Estado"
+              required
+            />
+          </div>
+        </div>
+
+        <div className={styles.divDisplay}>
+          <div className={styles.divComponentes}>
+            <label>Informe o dia escolhido:</label>
+            <input
+              type="text"
+              {...register("data")}
+              placeholder="Insira a data que você gostaria"
+              required
+            />
+          </div>
+
+          <div className={styles.divComponentes}>
+            <label>Informe o horário desejado:</label>
+            <input
+              type="text"
+              {...register("horário")}
+              placeholder="Insira o horário que você gostaria"
+              required
+            />
+          </div>
+        </div>
+
+        <button type="submit" className={styles.botaoAgendar}>
+          {editable ? "Editar" : "Agendar"}
+        </button>
+      </form>
+
+      <Link to="/AcompanharAtendimentos">
+        <ButtonPages
+          className={styles.botaoAcompanhar}
+          text="Acompanhar atendimento"
+        />
+      </Link>
+    </div>
+  );
 };
 
-export default CreatEditForm; 
+export default CreatEditForm;
