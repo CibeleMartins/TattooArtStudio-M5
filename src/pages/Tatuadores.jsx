@@ -1,4 +1,7 @@
 import styles from "./Tatuadores.module.css"
+import artist from "../assets/imagens/artist.png"
+import artist2 from "../assets/imagens/artist2.png"
+import artist3 from "../assets/imagens/artist3.png"
 
 function Tatuadores() {
     return(
@@ -6,26 +9,22 @@ function Tatuadores() {
         <main>  
             
         <div className={styles.tituloIn}>
-               <h1>Nossos artistas</h1>
+               <h1>Alguns dos nossos Artistas</h1>
         </div>
         
     <div className={styles.cards}>
         <div className={styles.container}>
             <div className={styles.imagem}> 
-                <img src="https://pbs.twimg.com/profile_images/669117153531023360/cSn3fUps_400x400.jpg" alt="tatuador"></img>
+                <img src={artist} alt="tatuador"></img>
             <div className={styles.titulo}>
                <h3>Paulo André</h3>
                <div className={styles.body }>
                <p>26 anos - São paulo - 4 anos de profissão</p>
                </div>
             </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 6c7f87101079d015ede6bb4c947f8ef2bf0c95c0
         <div className={styles.bnt}>
-            <button>
-                <a href="./Contato.jsx">
+            <button className={styles.button}>
+                <a href="./Contato">
                     Contato
                 </a>
             </button>
@@ -34,8 +33,8 @@ function Tatuadores() {
         </div>
 
         <div className={styles.container}>
-            <div className={styles.imagem}> 
-                <img src="https://s2.glbimg.com/WsZV2FK-x9zri5s8bZK6zZSYnzw=/512x320/smart/e.glbimg.com/og/ed/f/original/2020/12/09/didi_tatto4493.jpg" alt="tatuadora"></img>
+            <div> 
+                <img src={artist2} alt="tatuadora"></img>
             <div className={styles.titulo}>
                <h3>Felipe Oliveira</h3>
                <div className={styles.body }>
@@ -43,8 +42,8 @@ function Tatuadores() {
                </div>
             </div>
         <div className={styles.bnt}>
-            <button>
-                <a href="./Contato.jsx">
+            <button className={styles.button}>
+                <a href="./Contato">
                     Contato
                 </a>
             </button>
@@ -53,8 +52,8 @@ function Tatuadores() {
         </div>
 
         <div className={styles.container}>
-            <div className={styles.imagem}> 
-                <img src="https://cdn.domestika.org/c_fill,dpr_auto,f_auto,h_256,pg_1,t_base_params,w_256/v1561908433/avatars/001/318/042/1318042-original.jpg?1561908433" alt="tatuador"></img>
+            <div> 
+                <img src={artist3} alt="tatuador"></img>
             <div className={styles.titulo}>
                <h3>Kiko Pontes</h3>
                <div className={styles.body }>
@@ -62,12 +61,32 @@ function Tatuadores() {
                </div>
 
             <div>
-                <img src="" alt=''></img>
-
             </div>
         <div className={styles.bnt}>
-            <button>
-                <a href="./Contato.jsx">
+            <button className={styles.button}>
+                <a href="./Contato">
+                    Contato
+                </a>
+            </button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div className={styles.container}>
+            <div> 
+                <img src={artist3} alt="tatuador"></img>
+            <div className={styles.titulo}>
+               <h3>Kiko Pontes</h3>
+               <div className={styles.body }>
+               <p>34 anos - são paulo - 15 anos de profissão</p>
+               </div>
+
+            <div>
+            </div>
+        <div className={styles.bnt}>
+            <button className={styles.button}>
+                <a href="./Contato">
                     Contato
                 </a>
             </button>
@@ -86,6 +105,7 @@ function Tatuadores() {
                     a nossa equipe, também ficamos muito satisfeitos pelo reconhecimento
                     de nossos clientes e felizes com a dedicação que temos em 
                     eternizar em suas peles os sonhos e emoções unicamente incríveis.</p>
+        </div>
         </div>
         </main>
 
