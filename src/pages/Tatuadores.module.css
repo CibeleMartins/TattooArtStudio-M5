@@ -1,9 +1,13 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
 main{
     height: auto;
 }
 
 .tituloIn h1{
-    color: red;
+    color: white;
     font-size: 30pt;
 }
 
@@ -67,7 +71,7 @@ img {
 }
 
 .body p{
-    color: yellow;
+    color: white
 }
 
 h3,p{
