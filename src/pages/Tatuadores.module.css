@@ -14,15 +14,13 @@ main{
     flex-direction: row;
     align-content: center;
     align-items: center;
+    padding: 5rem;
+    height: 70%;
 }
 
-.cards{
-    padding: 5rem;
-    height: 50%;
-}
 
 .container{
-    width: 80%;
+    width: 100%;
     overflow: hidden;
     box-shadow: 0px 0px 15px -5px;
     transition: 0.3s;
@@ -35,6 +33,7 @@ main{
     border-radius: 20px;
     padding: 20px;
     margin: 15px;
+    height: 70%;
     
 }
 
@@ -50,11 +49,12 @@ main{
     box-shadow: 0px 0px 15px 0px;
 }
 
-.imagem{
+img {
     overflow: hidden;
-    height: 90%;
-    width: 90%;
-    margin-left: 20px;
+    height: 100%;
+    width: 100%;
+   
+   
 }
 
 .titulo{
@@ -73,20 +73,24 @@ main{
 
 h3,p{
     margin: 0;
-    padding: o;
+    padding: 0;
 }
 .btn{
     display: flex;
     justify-content: center;
     
 }
-.btn button{
+ .button{
     background-color: brown;
-    border: none;
-    transition: 0.2s;
-    margin-bottom: 0.5rem;
-    border-radius: 3px;
+    color: white;
+    width: 60%;
+    margin-top: 1%;
+    padding: 1%;
+    border-color: rgb(141, 25, 25);
+    color: rgb(99, 10, 10);
+    margin-bottom: 3%;
 }
+
 a{
     text-transform: uppercase;
     text-decoration: none;
