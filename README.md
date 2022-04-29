@@ -10,9 +10,10 @@
      Sumário
       <p align="center">
   <a href="#sobre"> Sobre </a> |
-  <a href="#conhecimentos-praticados"> Conhecimentos praticados </a> |
-  <a href="#rotas-da-aplicação"> Rotas da aplicação </a> |
-  <a href="#tecnologias-utilizadas"> Tecnologias utilizadas </a>      
+  <a href="#conhecimentos-praticados"> Conhecimentos Praticados </a> |
+  <a href="#rodando-o-projeto"> Rodando o Projeto </a> |
+  <a href="#desenvolvido-por"> Desenvolvido por | </a>
+  <a href="#observações"> Observações </a>       
        <br />
     <br />
     <h1 align="center">
