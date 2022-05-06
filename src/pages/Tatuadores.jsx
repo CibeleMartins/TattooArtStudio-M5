@@ -9,6 +9,11 @@ import artist1 from "../assets/imagens/artist1.png";
 import artist2 from "../assets/imagens/artist2.png";
 import artist3 from "../assets/imagens/artist3.png";
 import artist4 from "../assets/imagens/artist4.png";
+import artist5 from "../assets/imagens/artist5.png";
+import artist6 from "../assets/imagens/artist6.png";
+import artist7 from "../assets/imagens/artist7.png";
+import artist8 from "../assets/imagens/artist8.png";
+
 
 function Tatuadores() {
 
@@ -49,11 +54,11 @@ function Tatuadores() {
                 <img className={styles.imgArtists} src={artist1} alt='artist'/>
 
                 <div className={styles.divInfos}>
-                    <h4>Carlos Eduardo</h4>
+                    <h4>Alex Ferraz</h4>
                     <br></br>
-                    <p>25 anos</p>
+                    <p>32 anos</p>
                     <br></br>
-                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <p>MINIMALISTA · GEOMÉTRICO · BLACKWORK</p>
                     <br></br>
                     <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
                 </div>
@@ -70,13 +75,13 @@ function Tatuadores() {
                 <img className={styles.imgArtists} src={artist2} alt='artist'/>
 
                 <div className={styles.divInfos}>
-                    <h4>Carlos Eduardo</h4>
+                    <h4>Rafella Martins</h4>
                     <br></br>
-                    <p>25 anos</p>
+                    <p>24 anos</p>
                     <br></br>
-                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <p>SINGLE LINE · PONTILHISMO · OLD SCHOOL</p>
                     <br></br>
-                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+                    <p><strong>Atende no Rio de Janeiro</strong></p>
                 </div>
 
                 <div className={styles.buttonBox}>
@@ -95,13 +100,13 @@ function Tatuadores() {
                 <img className={styles.imgArtists} src={artist4} alt='artist'/>
 
                 <div className={styles.divInfos}>
-                    <h4>Carlos Eduardo</h4>
+                    <h4>Thiago Vieira</h4>
                     <br></br>
-                    <p>25 anos</p>
+                    <p>38 anos</p>
                     <br></br>
-                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <p>GLITCH · GEOMÉTRICO · AQUARELA</p>
                     <br></br>
-                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+                    <p><strong>Atende em São Paulo</strong></p>
                 </div>
 
                 <div className={styles.buttonBox}>
@@ -115,11 +120,11 @@ function Tatuadores() {
                 <img className={styles.imgArtists} src={artist3} alt='artist'></img>
 
                 <div className={styles.divInfos}>
-                    <h4>Carlos Eduardo</h4>
+                    <h4>Carina Ribeiro</h4>
                     <br></br>
-                    <p>25 anos</p>
+                    <p>23 anos</p>
                     <br></br>
-                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <p>ORIENTAL · MINIMALISTA · OLD SCHOOL</p>
                     <br></br>
                     <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
                 </div>
@@ -132,16 +137,16 @@ function Tatuadores() {
 
             <div className={styles.cards}>
 
-                <img className={styles.imgArtists} src={artist2} alt='artist'></img>
+                <img className={styles.imgArtists} src={artist5} alt='artist'></img>
 
                 <div className={styles.divInfos}>
-                    <h4>Carlos Eduardo</h4>
+                    <h4>Paulo Ferreira</h4>
                     <br></br>
                     <p>25 anos</p>
                     <br></br>
-                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <p>REALISTA · GEOMÉTRICO · MAORI</p>
                     <br></br>
-                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+                    <p><strong>Atende em São Paulo</strong></p>
                 </div>
 
                 <div className={styles.buttonBox}>
@@ -158,16 +163,16 @@ function Tatuadores() {
 
             <div className={styles.cards}>
 
-                <img className={styles.imgArtists} src={artist2} alt='artist'/>
+                <img className={styles.imgArtists} src={artist6} alt='artist'/>
 
                 <div className={styles.divInfos}>
-                    <h4>Carlos Eduardo</h4>
+                    <h4>Milena Alves</h4>
                     <br></br>
                     <p>25 anos</p>
                     <br></br>
-                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <p>GLITCH · SINGLE LINE · REALISTA</p>
                     <br></br>
-                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+                    <p><strong>Atende em São Paulo</strong></p>
                 </div>
 
                 <div className={styles.buttonBox}>
@@ -177,17 +182,17 @@ function Tatuadores() {
 
             <div className={styles.cards}>
 
-                <img className={styles.imgArtists} src={artist2} alt='artist'/>
+                <img className={styles.imgArtists} src={artist7} alt='artist'/>
 
                 <div className={styles.divInfos}>
 
-                    <h4>Carlos Eduardo</h4>
+                    <h4>Beatriz Gomes</h4>
                     <br></br>
-                    <p>25 anos</p>
+                    <p>27 anos</p>
                     <br></br>
-                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <p>MINIMALISTA · REALISTA · OLD SCHOOL</p>
                     <br></br>
-                    <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
+                    <p><strong>Atende no Rio de Janeiro</strong></p>
 
                 </div>
 
@@ -199,15 +204,15 @@ function Tatuadores() {
 
             <div className={styles.cards}>
 
-                <img className={styles.imgArtists} src={artist2} alt='artist'/>
+                <img className={styles.imgArtists} src={artist8} alt='artist'/>
 
                 <div className={styles.divInfos}>
 
-                    <h4>Carlos Eduardo</h4>
+                    <h4>Eduardo Lopes</h4>
                     <br></br>
-                    <p>25 anos</p>
+                    <p>29 anos</p>
                     <br></br>
-                    <p>PONTILHISMO · OLD SCHOOL · GEOMÉTRICO</p>
+                    <p>PONTILHISMO · GLITCH · BLACKWORK</p>
                     <br></br>
                     <p><strong>Atende em São Paulo e Rio de Janeiro</strong></p>
 
