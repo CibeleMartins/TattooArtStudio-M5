@@ -1,10 +1,10 @@
-# Bem vindo ao Studio Tattoo Art
+# Bem vindo ao Tattoo Art Studio
 
 <br />
 <p align="center">
     <img src="./src/assets/imagens/flag.jpg" alt="Logo" width="300">
 
-  <h3 align="center">Studio Tattoo API com Node, Express, Sequelize e SQLite</h3>
+  <h3 align="center"></h3>
  <br />
   <p align="center">
      Sumário
@@ -12,7 +12,7 @@
   <a href="#sobre"> Sobre </a> |
   <a href="#conhecimentos-praticados"> Conhecimentos Praticados </a> |
   <a href="#rodando-o-projeto"> Rodando o Projeto </a> |
-  <a href="#desenvolvido-por"> Desenvolvido por | </a>
+  <a href="#desenvolvido-por"> Desenvolvido por </a> |
   <a href="#observações"> Observações </a>       
        <br />
     <br />
@@ -44,11 +44,11 @@ Cada integrante do grupo ficou responsável pela criação de uma ou mais partes
 
 ## Rodando o Projeto
 
-- Acesse a API através do [link]()
+- Acesse a API através do [link](https://github.com/Ivyrch/Api-StudioTattoo)
 - Utilize o Git Clone no repositório
 - **Abra ele em http://localhost:3000 em seu Navegador
 - No terminal do seu VSCode digite: npm start para rodar a API
-- Não se esqueça de clonar o repositório Studio Tattoo Art, clicando [aqui](https://github.com/CibeleMartins/studioTattooArt-M5.git)
+- Não se esqueça de clonar o repositório Tattoo Art Studio, clicando [aqui](https://github.com/CibeleMartins/studioTattooArt-M5.git)
 - Além disso digite no terminal do VSCode 'npm i' para instalar as dependências
 - Após seguir todos esses passos digite finalmente no terminal: 'npm start' para rodar o projeto!
 
